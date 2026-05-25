@@ -1,0 +1,48 @@
+site_name: Учебная практика ПМ.07 — Соадминистрирование и автоматизация баз данных и серверов
+
+use_directory_urls: false
+
+theme:
+  name: material
+  language: ru
+  features:
+    - content.code.copy
+    - navigation.top
+    - navigation.tracking
+    - toc.follow
+
+plugins:
+  - search
+
+nav:
+  - Главная: index.md
+  - Предметные области: subject_areas.md
+  - Теория:
+      - Этап 1. СУБД, сервер и подключение клиентов: theory/stage1.md
+      - Этап 2. Пользователи, роли и разграничение доступа: theory/stage2.md
+      - Этап 3. Резервное копирование и восстановление: theory/stage3.md
+      - Этап 4. Автоматизация рутинных операций: theory/stage4.md
+  - Практика:
+      - Этап 1. Установка СУБД и проверка работы сервера: practice/stage1.md
+      - Этап 2. Создание пользователей и проверка прав: practice/stage2.md
+      - Этап 3. Резервная копия и восстановление: practice/stage3.md
+      - Этап 4. Скрипт автоматизации и расписание: practice/stage4.md
+
+markdown_extensions:
+  - tables
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
