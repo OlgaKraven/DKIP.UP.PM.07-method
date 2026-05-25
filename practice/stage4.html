@@ -1,0 +1,1357 @@
+
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="stage3.html">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Этап 4. Скрипт автоматизации и расписание - Учебная практика ПМ.07 — Соадминистрирование и автоматизация баз данных и серверов</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#4" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href="../index.html" title="Учебная практика ПМ.07 — Соадминистрирование и автоматизация баз данных и серверов" class="md-header__button md-logo" aria-label="Учебная практика ПМ.07 — Соадминистрирование и автоматизация баз данных и серверов" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Учебная практика ПМ.07 — Соадминистрирование и автоматизация баз данных и серверов
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Этап 4. Скрипт автоматизации и расписание
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="Учебная практика ПМ.07 — Соадминистрирование и автоматизация баз данных и серверов" class="md-nav__button md-logo" aria-label="Учебная практика ПМ.07 — Соадминистрирование и автоматизация баз данных и серверов" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Учебная практика ПМ.07 — Соадминистрирование и автоматизация баз данных и серверов
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Главная
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../subject_areas.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Предметные области
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Теория
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Теория
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../theory/stage1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 1. СУБД, сервер и подключение клиентов
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../theory/stage2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 2. Пользователи, роли и разграничение доступа
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../theory/stage3.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 3. Резервное копирование и восстановление
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../theory/stage4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 4. Автоматизация рутинных операций
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Практика
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Практика
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="stage1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 1. Установка СУБД и проверка работы сервера
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="stage2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 2. Создание пользователей и проверка прав
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="stage3.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 3. Резервная копия и восстановление
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 4. Скрипт автоматизации и расписание
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="stage4.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 4. Скрипт автоматизации и расписание
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Задание
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ход работы
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Шаги
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Шаги">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Хранение учётных данных вне скрипта
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-linux-bash" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Скрипт для Linux (Bash)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-windows-powershell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Скрипт для Windows (PowerShell)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Имитация ошибки
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-linux-cron" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Расписание: Linux (cron)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Расписание: Windows (Планировщик заданий)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Индивидуальная доработка варианта
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Записи в журнал администратора
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Сборка итогового отчёта
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Контрольные проверки этапа
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Артефакты этапа
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Задание
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ход работы
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Шаги
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Шаги">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Хранение учётных данных вне скрипта
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-linux-bash" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Скрипт для Linux (Bash)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-windows-powershell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Скрипт для Windows (PowerShell)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Имитация ошибки
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-linux-cron" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Расписание: Linux (cron)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Расписание: Windows (Планировщик заданий)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Индивидуальная доработка варианта
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Записи в журнал администратора
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Сборка итогового отчёта
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Контрольные проверки этапа
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Артефакты этапа
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="4">Этап 4. Скрипт автоматизации и расписание<a class="headerlink" href="#4" title="Permanent link">&para;</a></h1>
+<h2 id="_1">Задание<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>Написать скрипт автоматизации <strong>той задачи, которая указана в варианте</strong> (см. <a href="../subject_areas.html">список вариантов</a>, последняя колонка). Скрипт читает параметры из переменных, пишет журнал в отдельный файл и корректно реагирует на ошибки. Поставить скрипт на расписание — <code>cron</code> (Linux) или Планировщик заданий (Windows). Убедиться, что <strong>минимум один автоматический запуск прошёл успешно</strong> и оставил запись в журнале.</p>
+<h2 id="_2">Ход работы<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>В отдельной папке <code>/usr/local/bin</code> (Linux) или <code>C:\Scripts</code> (Windows) создаётся файл скрипта. В скрипте — заголовок, переменные, проверки, основной блок, журналирование. Учётные данные СУБД выносятся в <code>~/.my.cnf</code> / <code>~/.pgpass</code> / Windows Credential Manager. Расписание ставится на ближайшее время для проверки, затем переключается на «боевое» значение (например, ежедневно в 03:00).</p>
+<h2 id="_3">Шаги<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="1">1. Хранение учётных данных вне скрипта<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<p><strong>MySQL / MariaDB</strong> — файл <code>~/.my.cnf</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">[client]</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="na">user</span><span class="o">=</span><span class="s">admin</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="na">password</span><span class="o">=</span><span class="s">Strong!Pwd1</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="na">host</span><span class="o">=</span><span class="s">127.0.0.1</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>chmod<span class="w"> </span><span class="m">600</span><span class="w"> </span>~/.my.cnf
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>mysql<span class="w">                       </span><span class="c1"># подключение без `-u` и `-p`</span>
+</code></pre></div>
+<p><strong>PostgreSQL</strong> — файл <code>~/.pgpass</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>127.0.0.1:5432:library:admin:Strong!Pwd1
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>chmod<span class="w"> </span><span class="m">600</span><span class="w"> </span>~/.pgpass
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>psql<span class="w"> </span>-h<span class="w"> </span><span class="m">127</span>.0.0.1<span class="w"> </span>-U<span class="w"> </span>admin<span class="w"> </span>-d<span class="w"> </span>library<span class="w">   </span><span class="c1"># без запроса пароля</span>
+</code></pre></div>
+<p><strong>MS SQL Server</strong> — <code>Get-Credential</code> с сохранением в зашифрованный XML:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">Get-Credential</span> <span class="p">|</span> <span class="nb">Export-Clixml</span> <span class="n">-Path</span> <span class="s2">&quot;C:\Scripts\db.cred.xml&quot;</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nv">$cred</span> <span class="p">=</span> <span class="nb">Import-Clixml</span> <span class="s2">&quot;C:\Scripts\db.cred.xml&quot;</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nb">Invoke-Sqlcmd</span> <span class="n">-ServerInstance</span> <span class="s2">&quot;.\SQLEXPRESS&quot;</span> <span class="n">-Credential</span> <span class="nv">$cred</span> <span class="n">-Query</span> <span class="s2">&quot;SELECT 1&quot;</span>
+</code></pre></div>
+<h3 id="2-linux-bash">2. Скрипт для Linux (Bash)<a class="headerlink" href="#2-linux-bash" title="Permanent link">&para;</a></h3>
+<p>Создайте <code>/usr/local/bin/backup.sh</code>. Пример для <strong>варианта 1</strong> (<code>mysqldump</code> с ротацией 7 дней) — для своего варианта подставьте свою команду.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sudo<span class="w"> </span>tee<span class="w"> </span>/usr/local/bin/backup.sh<span class="w"> </span>&gt;<span class="w"> </span>/dev/null<span class="w"> </span><span class="s">&lt;&lt;&#39;EOF&#39;</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="s">#!/usr/bin/env bash</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="s"># backup.sh — ежедневный логический бэкап БД + ротация</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="s">set -euo pipefail</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="s">DB_HOST=&quot;${DB_HOST:-127.0.0.1}&quot;</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="s">DB_NAME=&quot;${DB_NAME:-library}&quot;</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="s">BACKUP_DIR=&quot;${BACKUP_DIR:-/var/backups/db}&quot;</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="s">KEEP_DAYS=&quot;${KEEP_DAYS:-7}&quot;</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="s">mkdir -p &quot;${BACKUP_DIR}&quot;</span>
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="s">ts=&quot;$(date +&#39;%Y-%m-%d_%H-%M-%S&#39;)&quot;</span>
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="s">file=&quot;${BACKUP_DIR}/${DB_NAME}_${ts}.sql.gz&quot;</span>
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="s">log=&quot;${BACKUP_DIR}/backup.log&quot;</span>
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>
+<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="s">log() { echo &quot;$(date +&#39;%Y-%m-%d %H:%M:%S&#39;) [$1] $2&quot; &gt;&gt; &quot;${log}&quot;; }</span>
+<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>
+<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a><span class="s">log INFO &quot;Старт бэкапа базы ${DB_NAME}&quot;</span>
+<a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a><span class="s">start=$(date +%s)</span>
+<a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a>
+<a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a><span class="s">if mysqldump --defaults-file=/root/.my.cnf -h &quot;${DB_HOST}&quot; &quot;${DB_NAME}&quot; 2&gt;&gt;&quot;${log}&quot; | gzip &gt; &quot;${file}&quot;; then</span>
+<a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a><span class="s">    size=$(stat -c%s &quot;${file}&quot;)</span>
+<a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a><span class="s">    sha256=$(sha256sum &quot;${file}&quot; | awk &#39;{print $1}&#39;)</span>
+<a id="__codelineno-6-24" name="__codelineno-6-24" href="#__codelineno-6-24"></a><span class="s">    echo &quot;${sha256}  ${file}&quot; &gt; &quot;${file}.sha256&quot;</span>
+<a id="__codelineno-6-25" name="__codelineno-6-25" href="#__codelineno-6-25"></a><span class="s">    log INFO &quot;OK ${file} size=${size} sha=${sha256:0:12}...&quot;</span>
+<a id="__codelineno-6-26" name="__codelineno-6-26" href="#__codelineno-6-26"></a><span class="s">else</span>
+<a id="__codelineno-6-27" name="__codelineno-6-27" href="#__codelineno-6-27"></a><span class="s">    log ERROR &quot;Сбой mysqldump&quot;</span>
+<a id="__codelineno-6-28" name="__codelineno-6-28" href="#__codelineno-6-28"></a><span class="s">    exit 1</span>
+<a id="__codelineno-6-29" name="__codelineno-6-29" href="#__codelineno-6-29"></a><span class="s">fi</span>
+<a id="__codelineno-6-30" name="__codelineno-6-30" href="#__codelineno-6-30"></a>
+<a id="__codelineno-6-31" name="__codelineno-6-31" href="#__codelineno-6-31"></a><span class="s">removed=$(find &quot;${BACKUP_DIR}&quot; -name &quot;${DB_NAME}_*.sql.gz&quot; -mtime +&quot;${KEEP_DAYS}&quot; -print -delete | wc -l)</span>
+<a id="__codelineno-6-32" name="__codelineno-6-32" href="#__codelineno-6-32"></a><span class="s">log INFO &quot;Удалено старых бэкапов: ${removed}&quot;</span>
+<a id="__codelineno-6-33" name="__codelineno-6-33" href="#__codelineno-6-33"></a>
+<a id="__codelineno-6-34" name="__codelineno-6-34" href="#__codelineno-6-34"></a><span class="s">elapsed=$(( $(date +%s) - start ))</span>
+<a id="__codelineno-6-35" name="__codelineno-6-35" href="#__codelineno-6-35"></a><span class="s">log INFO &quot;Завершено за ${elapsed} c&quot;</span>
+<a id="__codelineno-6-36" name="__codelineno-6-36" href="#__codelineno-6-36"></a><span class="s">EOF</span>
+<a id="__codelineno-6-37" name="__codelineno-6-37" href="#__codelineno-6-37"></a>
+<a id="__codelineno-6-38" name="__codelineno-6-38" href="#__codelineno-6-38"></a>sudo<span class="w"> </span>chmod<span class="w"> </span><span class="m">750</span><span class="w"> </span>/usr/local/bin/backup.sh
+<a id="__codelineno-6-39" name="__codelineno-6-39" href="#__codelineno-6-39"></a>sudo<span class="w"> </span>chown<span class="w"> </span>root:root<span class="w"> </span>/usr/local/bin/backup.sh
+</code></pre></div>
+<p>Тестовый запуск <strong>руками</strong>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>sudo<span class="w"> </span>/usr/local/bin/backup.sh
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>sudo<span class="w"> </span>tail<span class="w"> </span>/var/backups/db/backup.log
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>ls<span class="w"> </span>-lh<span class="w"> </span>/var/backups/db/
+</code></pre></div>
+<h3 id="3-windows-powershell">3. Скрипт для Windows (PowerShell)<a class="headerlink" href="#3-windows-powershell" title="Permanent link">&para;</a></h3>
+<p>Создайте <code>C:\Scripts\backup.ps1</code>. Пример для <strong>варианта 18</strong> (<code>BACKUP DATABASE</code> в MS SQL Express).</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="sh">@&#39;</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="sh">param(</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="sh">    [string]$ServerInstance = &quot;.\SQLEXPRESS&quot;,</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="sh">    [string]$Database       = &quot;Library&quot;,</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="sh">    [string]$BackupDir      = &quot;D:\Backups&quot;,</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="sh">    [int]   $KeepDays       = 7</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="sh">)</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="sh">$ErrorActionPreference = &quot;Stop&quot;</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="sh">$ts   = Get-Date -Format &quot;yyyy-MM-dd_HH-mm-ss&quot;</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="sh">$file = Join-Path $BackupDir &quot;$($Database)_$ts.bak&quot;</span>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="sh">$log  = Join-Path $BackupDir &quot;backup.log&quot;</span>
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="sh">$start = Get-Date</span>
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="sh">function Write-Log {</span>
+<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a><span class="sh">    param([string]$Level, [string]$Message)</span>
+<a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a><span class="sh">    &quot;{0} [{1}] {2}&quot; -f (Get-Date -Format &quot;yyyy-MM-dd HH:mm:ss&quot;), $Level, $Message |</span>
+<a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a><span class="sh">        Add-Content -Path $log</span>
+<a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a><span class="sh">}</span>
+<a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a>
+<a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a><span class="sh">if (-not (Test-Path $BackupDir)) { New-Item -ItemType Directory -Path $BackupDir | Out-Null }</span>
+<a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a><span class="sh">Write-Log INFO &quot;Старт бэкапа базы $Database&quot;</span>
+<a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a>
+<a id="__codelineno-8-24" name="__codelineno-8-24" href="#__codelineno-8-24"></a><span class="sh">try {</span>
+<a id="__codelineno-8-25" name="__codelineno-8-25" href="#__codelineno-8-25"></a><span class="sh">    Invoke-Sqlcmd -ServerInstance $ServerInstance -Query @&quot;</span>
+<a id="__codelineno-8-26" name="__codelineno-8-26" href="#__codelineno-8-26"></a><span class="sh">BACKUP DATABASE [$Database]</span>
+<a id="__codelineno-8-27" name="__codelineno-8-27" href="#__codelineno-8-27"></a><span class="sh">TO DISK = &#39;$file&#39;</span>
+<a id="__codelineno-8-28" name="__codelineno-8-28" href="#__codelineno-8-28"></a><span class="sh">WITH INIT, COMPRESSION, NAME = N&#39;$Database full backup&#39;;</span>
+<a id="__codelineno-8-29" name="__codelineno-8-29" href="#__codelineno-8-29"></a><span class="sh">&quot;@</span>
+<a id="__codelineno-8-30" name="__codelineno-8-30" href="#__codelineno-8-30"></a><span class="sh">    $size = (Get-Item $file).Length</span>
+<a id="__codelineno-8-31" name="__codelineno-8-31" href="#__codelineno-8-31"></a><span class="sh">    $hash = (Get-FileHash $file -Algorithm SHA256).Hash</span>
+<a id="__codelineno-8-32" name="__codelineno-8-32" href="#__codelineno-8-32"></a><span class="sh">    &quot;$hash  $file&quot; | Set-Content &quot;$file.sha256.txt&quot;</span>
+<a id="__codelineno-8-33" name="__codelineno-8-33" href="#__codelineno-8-33"></a><span class="sh">    Write-Log INFO (&quot;OK {0} size={1} sha={2}...&quot; -f $file, $size, $hash.Substring(0,12))</span>
+<a id="__codelineno-8-34" name="__codelineno-8-34" href="#__codelineno-8-34"></a><span class="sh">} catch {</span>
+<a id="__codelineno-8-35" name="__codelineno-8-35" href="#__codelineno-8-35"></a><span class="sh">    Write-Log ERROR &quot;Сбой BACKUP DATABASE: $($_.Exception.Message)&quot;</span>
+<a id="__codelineno-8-36" name="__codelineno-8-36" href="#__codelineno-8-36"></a><span class="sh">    exit 1</span>
+<a id="__codelineno-8-37" name="__codelineno-8-37" href="#__codelineno-8-37"></a><span class="sh">}</span>
+<a id="__codelineno-8-38" name="__codelineno-8-38" href="#__codelineno-8-38"></a>
+<a id="__codelineno-8-39" name="__codelineno-8-39" href="#__codelineno-8-39"></a><span class="sh">$removed = Get-ChildItem $BackupDir -Filter &quot;$Database`_*.bak&quot; |</span>
+<a id="__codelineno-8-40" name="__codelineno-8-40" href="#__codelineno-8-40"></a><span class="sh">    Where-Object { $_.CreationTime -lt (Get-Date).AddDays(-$KeepDays) }</span>
+<a id="__codelineno-8-41" name="__codelineno-8-41" href="#__codelineno-8-41"></a><span class="sh">$removed | Remove-Item -Force</span>
+<a id="__codelineno-8-42" name="__codelineno-8-42" href="#__codelineno-8-42"></a><span class="sh">Write-Log INFO &quot;Удалено старых бэкапов: $($removed.Count)&quot;</span>
+<a id="__codelineno-8-43" name="__codelineno-8-43" href="#__codelineno-8-43"></a>
+<a id="__codelineno-8-44" name="__codelineno-8-44" href="#__codelineno-8-44"></a><span class="sh">$elapsed = (New-TimeSpan -Start $start -End (Get-Date)).TotalSeconds</span>
+<a id="__codelineno-8-45" name="__codelineno-8-45" href="#__codelineno-8-45"></a><span class="sh">Write-Log INFO (&quot;Завершено за {0:F1} c&quot; -f $elapsed)</span>
+<a id="__codelineno-8-46" name="__codelineno-8-46" href="#__codelineno-8-46"></a><span class="sh">&#39;@</span> <span class="p">|</span> <span class="nb">Set-Content</span> <span class="n">-Path</span> <span class="n">C</span><span class="p">:\</span><span class="n">Scripts</span><span class="p">\</span><span class="n">backup</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-Encoding</span> <span class="n">UTF8</span>
+</code></pre></div>
+<p>Тестовый запуск:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">powershell</span> <span class="n">-NoProfile</span> <span class="n">-ExecutionPolicy</span> <span class="n">Bypass</span> <span class="o">-File</span> <span class="n">C</span><span class="p">:\</span><span class="n">Scripts</span><span class="p">\</span><span class="n">backup</span><span class="p">.</span><span class="n">ps1</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="nb">Get-Content</span> <span class="n">D</span><span class="p">:\</span><span class="n">Backups</span><span class="p">\</span><span class="n">backup</span><span class="p">.</span><span class="n">log</span> <span class="n">-Tail</span> <span class="n">5</span>
+</code></pre></div>
+<h3 id="4_1">4. Имитация ошибки<a class="headerlink" href="#4_1" title="Permanent link">&para;</a></h3>
+<p>Чтобы убедиться, что скрипт <strong>корректно реагирует на сбой</strong>, временно повредите учётные данные:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># Linux: смените пароль в ~/.my.cnf на неверный</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;[client]</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="s2">user=admin</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="s2">password=WRONG&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>/root/.my.cnf
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>sudo<span class="w"> </span>/usr/local/bin/backup.sh<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;должен был упасть&quot;</span>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>sudo<span class="w"> </span>tail<span class="w"> </span>/var/backups/db/backup.log
+</code></pre></div>
+<p>В логе должна появиться строка <code>[ERROR] Сбой mysqldump</code>, а файл бэкапа <strong>не должен</strong> быть создан (или должен быть нулевого размера и удалён). Восстановите правильный пароль.</p>
+<h3 id="5-linux-cron">5. Расписание: Linux (cron)<a class="headerlink" href="#5-linux-cron" title="Permanent link">&para;</a></h3>
+<p>Откройте редактор crontab от того пользователя, под которым будет работать скрипт. Для бэкапа с правами <code>root</code> — <code>sudo crontab -e</code>.</p>
+<p>Поставьте сначала задание на <strong>ближайшие 2 минуты</strong> для проверки:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>*/2 * * * *   /usr/local/bin/backup.sh
+</code></pre></div>
+<p>Через 3 минуты убедитесь, что:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>ls<span class="w"> </span>-lh<span class="w"> </span>/var/backups/db/
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>sudo<span class="w"> </span>tail<span class="w"> </span>/var/log/syslog<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>CRON
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>sudo<span class="w"> </span>tail<span class="w"> </span>/var/backups/db/backup.log
+</code></pre></div>
+<p>После успешной проверки замените расписание на «боевое» — каждый день в 03:00:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>0 3 * * *   /usr/local/bin/backup.sh
+</code></pre></div>
+<p>Сохраните вывод <code>crontab -l</code> в файл <code>crontab.txt</code> для отчёта.</p>
+<h3 id="6-windows">6. Расписание: Windows (Планировщик заданий)<a class="headerlink" href="#6-windows" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="nv">$action</span>  <span class="p">=</span> <span class="nb">New-ScheduledTaskAction</span> <span class="p">`</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>    <span class="n">-Execute</span> <span class="s2">&quot;powershell.exe&quot;</span> <span class="p">`</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>    <span class="n">-Argument</span> <span class="s2">&quot;-NoProfile -ExecutionPolicy Bypass -File C:\Scripts\backup.ps1&quot;</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="c"># Ближайший тест</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="nv">$trigger</span> <span class="p">=</span> <span class="nb">New-ScheduledTaskTrigger</span> <span class="n">-Once</span> <span class="n">-At</span> <span class="p">((</span><span class="nb">Get-Date</span><span class="p">).</span><span class="n">AddMinutes</span><span class="p">(</span><span class="n">2</span><span class="p">))</span>
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="nv">$principal</span> <span class="p">=</span> <span class="nb">New-ScheduledTaskPrincipal</span> <span class="p">`</span>
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>    <span class="n">-UserId</span> <span class="s2">&quot;NT AUTHORITY\SYSTEM&quot;</span> <span class="n">-RunLevel</span> <span class="n">Highest</span>
+<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a>
+<a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a><span class="nb">Register-ScheduledTask</span> <span class="n">-TaskName</span> <span class="s2">&quot;DB Backup Test&quot;</span> <span class="p">`</span>
+<a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a>    <span class="n">-Action</span> <span class="nv">$action</span> <span class="n">-Trigger</span> <span class="nv">$trigger</span> <span class="n">-Principal</span> <span class="nv">$principal</span> <span class="p">`</span>
+<a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a>    <span class="n">-Description</span> <span class="s2">&quot;Тест бэкапа БД&quot;</span>
+</code></pre></div>
+<p>Через 3 минуты:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="nb">Get-ScheduledTaskInfo</span> <span class="n">-TaskName</span> <span class="s2">&quot;DB Backup Test&quot;</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="nb">Get-Content</span> <span class="n">D</span><span class="p">:\</span><span class="n">Backups</span><span class="p">\</span><span class="n">backup</span><span class="p">.</span><span class="n">log</span> <span class="n">-Tail</span> <span class="n">5</span>
+</code></pre></div>
+<p>Если <code>LastTaskResult = 0</code> и в логе строка <code>OK ...</code> — расписание работает. Затем поставьте «боевое» задание на 03:00 каждый день:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="nb">Unregister-ScheduledTask</span> <span class="n">-TaskName</span> <span class="s2">&quot;DB Backup Test&quot;</span> <span class="n">-Confirm</span><span class="p">:</span><span class="nv">$false</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="nv">$trigger</span> <span class="p">=</span> <span class="nb">New-ScheduledTaskTrigger</span> <span class="n">-Daily</span> <span class="n">-At</span> <span class="n">3</span><span class="p">:</span><span class="n">00am</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="nb">Register-ScheduledTask</span> <span class="n">-TaskName</span> <span class="s2">&quot;DB Backup&quot;</span> <span class="p">`</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>    <span class="n">-Action</span> <span class="nv">$action</span> <span class="n">-Trigger</span> <span class="nv">$trigger</span> <span class="n">-Principal</span> <span class="nv">$principal</span> <span class="p">`</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>    <span class="n">-Description</span> <span class="s2">&quot;Ежедневный бэкап БД&quot;</span>
+</code></pre></div>
+<h3 id="7">7. Индивидуальная доработка варианта<a class="headerlink" href="#7" title="Permanent link">&para;</a></h3>
+<p>Из списка <a href="../subject_areas.html">обязательных доработок</a> (раздел «Обязательная индивидуальная доработка» в конце страницы) выберите одну и реализуйте в своём скрипте. Минимум, который должен оказаться в отчёте:</p>
+<table>
+<thead>
+<tr>
+<th>Доработка</th>
+<th>Что должно появиться в скрипте/логе</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Длительность в мс</td>
+<td>Поле <code>elapsed_ms=...</code> в каждой записи INFO</td>
+</tr>
+<tr>
+<td>Проверка кода возврата</td>
+<td>Явная проверка <code>$?</code> / <code>$LASTEXITCODE</code>; выход с <code>exit 1</code> при сбое</td>
+</tr>
+<tr>
+<td>SHA-256</td>
+<td>Файл <code>*.sha256</code> рядом с каждым бэкапом + строка хеша в логе</td>
+</tr>
+<tr>
+<td>Удаление по расширениям</td>
+<td>Список расширений из переменной + удаление файлов &gt; N дней</td>
+</tr>
+<tr>
+<td><code>.env</code> / <code>config.ini</code></td>
+<td>Все настройки читаются из файла; скрипт не содержит «зашитых» значений</td>
+</tr>
+<tr>
+<td>Уровни сообщений</td>
+<td><code>INFO</code>, <code>WARN</code>, <code>ERROR</code> — в логе все три уровня хотя бы один раз</td>
+</tr>
+<tr>
+<td>Проверка свободного места</td>
+<td>Запрос <code>df -h</code> / <code>Get-PSDrive</code>; если меньше порога — <code>exit 2</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="8">8. Записи в журнал администратора<a class="headerlink" href="#8" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>2026-05-25 14:00 | AUTOMATION | установлен backup.sh; cron 0 3 * * * KEEP_DAYS=7
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>2026-05-25 14:02 | TEST_RUN   | запуск вручную; backup_2026-05-25_14-02.sql.gz, ok
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>2026-05-25 14:05 | NEGATIVE   | подменён пароль; в логе ERROR; бэкапа нет — ожидаемо
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>2026-05-26 03:00 | AUTO_RUN   | автозапуск cron; backup_2026-05-26_03-00.sql.gz, 142 КБ, 21 c
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>2026-05-26 09:30 | REVIEW     | прочитан backup.log; ошибок нет; ротация удалила 1 файл
+</code></pre></div>
+<h3 id="9">9. Сборка итогового отчёта<a class="headerlink" href="#9" title="Permanent link">&para;</a></h3>
+<p>В отчёт по практике входят 4 раздела (по этапам) и общая часть:</p>
+<table>
+<thead>
+<tr>
+<th>Раздел</th>
+<th>Что включить</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Этап 1</td>
+<td>Скриншоты статуса службы, конфиг, тестовое подключение из CLI и GUI</td>
+</tr>
+<tr>
+<td>Этап 2</td>
+<td><code>users.sql</code>, <code>SHOW GRANTS</code>/<code>\du</code>/<code>sp_helpuser</code>, журнал из 10 проверок</td>
+</tr>
+<tr>
+<td>Этап 3</td>
+<td>Файл бэкапа (+ SHA-256), <code>rows_before.txt</code>, <code>rows_after.txt</code>, скриншот восстановления</td>
+</tr>
+<tr>
+<td>Этап 4</td>
+<td>Сам скрипт, фрагмент <code>backup.log</code> (≥ 5 строк, есть <code>OK</code> и <code>ERROR</code>), <code>crontab -l</code> / <code>Get-ScheduledTaskInfo</code>, описание индивидуальной доработки</td>
+</tr>
+<tr>
+<td>Общая</td>
+<td>Полный журнал администратора и краткие выводы (что усвоено)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_4">Контрольные проверки этапа<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<ul>
+<li>[ ] Скрипт лежит в системном пути, имеет права на исполнение и владельца <code>root</code>/администратора.</li>
+<li>[ ] Учётные данные <strong>не записаны</strong> в текст скрипта.</li>
+<li>[ ] При запуске вручную скрипт завершается с кодом <code>0</code> и создаёт файл бэкапа.</li>
+<li>[ ] При искусственной ошибке (неверный пароль) в логе появляется <code>ERROR</code> и скрипт выходит с ненулевым кодом.</li>
+<li>[ ] Тестовое расписание (раз в 2 минуты) сработало.</li>
+<li>[ ] Боевое расписание установлено и подтверждено выводом <code>crontab -l</code> / <code>Get-ScheduledTaskInfo</code>.</li>
+<li>[ ] Реализована индивидуальная доработка варианта.</li>
+<li>[ ] Журнал администратора содержит записи всех 4 этапов.</li>
+</ul>
+<h2 id="_5">Артефакты этапа<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Артефакт</th>
+<th>Где взять</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>backup.sh</code> или <code>backup.ps1</code></td>
+<td>Полный текст скрипта</td>
+</tr>
+<tr>
+<td><code>backup.log</code></td>
+<td>≥ 10 строк, есть <code>INFO</code> и <code>ERROR</code></td>
+</tr>
+<tr>
+<td><code>crontab.txt</code> или скриншот окна Планировщика</td>
+<td>вывод <code>crontab -l</code> / <code>Get-ScheduledTaskInfo</code></td>
+</tr>
+<tr>
+<td>Файл бэкапа автозапуска</td>
+<td>новый файл, появившийся после автоматического запуска</td>
+</tr>
+<tr>
+<td>Описание доработки</td>
+<td>абзац в отчёте по практике</td>
+</tr>
+<tr>
+<td>Готовый отчёт по практике</td>
+<td>итоговый документ со всеми этапами</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  К началу
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "navigation.top", "navigation.tracking", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1024 @@
+
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="index.html">
+      
+      
+        <link rel="next" href="theory/stage1.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Предметные области - Учебная практика ПМ.07 — Соадминистрирование и автоматизация баз данных и серверов</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href="index.html" title="Учебная практика ПМ.07 — Соадминистрирование и автоматизация баз данных и серверов" class="md-header__button md-logo" aria-label="Учебная практика ПМ.07 — Соадминистрирование и автоматизация баз данных и серверов" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Учебная практика ПМ.07 — Соадминистрирование и автоматизация баз данных и серверов
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Предметные области
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Учебная практика ПМ.07 — Соадминистрирование и автоматизация баз данных и серверов" class="md-nav__button md-logo" aria-label="Учебная практика ПМ.07 — Соадминистрирование и автоматизация баз данных и серверов" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Учебная практика ПМ.07 — Соадминистрирование и автоматизация баз данных и серверов
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Главная
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Предметные области
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="subject_areas.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Предметные области
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Обязательная индивидуальная доработка
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Теория
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Теория
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="theory/stage1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 1. СУБД, сервер и подключение клиентов
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="theory/stage2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 2. Пользователи, роли и разграничение доступа
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="theory/stage3.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 3. Резервное копирование и восстановление
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="theory/stage4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 4. Автоматизация рутинных операций
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Практика
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Практика
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="practice/stage1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 1. Установка СУБД и проверка работы сервера
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="practice/stage2.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 2. Создание пользователей и проверка прав
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="practice/stage3.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 3. Резервная копия и восстановление
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="practice/stage4.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Этап 4. Скрипт автоматизации и расписание
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Обязательная индивидуальная доработка
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">Предметные области<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>Номер варианта задаёт <strong>четыре параметра</strong>: какую СУБД ставить, на какой ОС, какие тестовые таблицы наполнять и какую рутинную задачу автоматизировать. Предметные области взяты те же, что и в УП.05 (ИС в WinForms/WPF), чтобы можно было использовать готовую структуру таблиц.</p>
+<p>Список ролей у всех вариантов одинаковый: <code>admin</code>, <code>app_user</code>, <code>readonly</code>.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">№</th>
+<th>СУБД</th>
+<th>ОС</th>
+<th>Предметная область</th>
+<th>Тестовые таблицы</th>
+<th>Задача автоматизации</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td>MySQL 8</td>
+<td>Ubuntu Server 22.04</td>
+<td>Библиотека</td>
+<td><code>books</code>, <code>readers</code>, <code>book_issues</code></td>
+<td>Ежедневный логический бэкап <code>mysqldump</code> с датой в имени, ротация 7 дней</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>MySQL 8</td>
+<td>Ubuntu Server 22.04</td>
+<td>Автосервис</td>
+<td><code>clients</code>, <code>cars</code>, <code>orders</code></td>
+<td>Скрипт проверки свободного места на диске и отправка предупреждения в файл-лог</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td>MySQL 8</td>
+<td>Debian 12</td>
+<td>Медицинская клиника</td>
+<td><code>patients</code>, <code>doctors</code>, <code>appointments</code></td>
+<td>Ежедневный отчёт «количество записей в каждой таблице» в файл <code>daily_stats.txt</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td>MariaDB 10</td>
+<td>Ubuntu Server 22.04</td>
+<td>Учебный центр</td>
+<td><code>courses</code>, <code>groups</code>, <code>students</code></td>
+<td>Бэкап только структуры (<code>--no-data</code>) раз в неделю</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td>MariaDB 10</td>
+<td>Debian 12</td>
+<td>Гостиница</td>
+<td><code>rooms</code>, <code>guests</code>, <code>bookings</code></td>
+<td>Сжатие старых бэкапов <code>.sql</code> в <code>.sql.gz</code>, удаление файлов &gt; 14 дней</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td>MariaDB 10</td>
+<td>Ubuntu Server 22.04</td>
+<td>Магазин электроники</td>
+<td><code>products</code>, <code>categories</code>, <code>sales</code></td>
+<td>Скрипт перезапуска службы СУБД, если она остановлена</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td>PostgreSQL 16</td>
+<td>Ubuntu Server 22.04</td>
+<td>Салон красоты</td>
+<td><code>clients</code>, <code>masters</code>, <code>appointments</code></td>
+<td>Бэкап через <code>pg_dump</code> в формате <code>custom</code> с компрессией</td>
+</tr>
+<tr>
+<td style="text-align: right;">8</td>
+<td>PostgreSQL 16</td>
+<td>Debian 12</td>
+<td>Спортивный клуб</td>
+<td><code>members</code>, <code>subscriptions</code>, <code>visits</code></td>
+<td>Запуск <code>VACUUM ANALYZE</code> по расписанию с записью времени выполнения в лог</td>
+</tr>
+<tr>
+<td style="text-align: right;">9</td>
+<td>PostgreSQL 16</td>
+<td>Ubuntu Server 22.04</td>
+<td>Туристическое агентство</td>
+<td><code>tours</code>, <code>clients</code>, <code>bookings</code></td>
+<td>Ежечасный SQL-запрос на количество свежих записей в <code>bookings</code>, вывод в лог</td>
+</tr>
+<tr>
+<td style="text-align: right;">10</td>
+<td>PostgreSQL 15</td>
+<td>Debian 12</td>
+<td>Склад</td>
+<td><code>items</code>, <code>suppliers</code>, <code>stock</code></td>
+<td>Поиск таблиц без обновлений за месяц, запись их имён в <code>idle_tables.log</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td>MySQL 8</td>
+<td>Ubuntu Server 22.04</td>
+<td>Кафе</td>
+<td><code>dishes</code>, <code>orders</code>, <code>staff</code></td>
+<td>Архивация заказов старше 90 дней в отдельную таблицу <code>orders_archive</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td>MySQL 8</td>
+<td>Ubuntu Server 22.04</td>
+<td>Кинотеатр</td>
+<td><code>films</code>, <code>sessions</code>, <code>tickets</code></td>
+<td>Очистка таблицы <code>tickets</code> от записей старше 30 дней + бэкап перед очисткой</td>
+</tr>
+<tr>
+<td style="text-align: right;">13</td>
+<td>MariaDB 10</td>
+<td>Debian 12</td>
+<td>Аптека</td>
+<td><code>medicines</code>, <code>batches</code>, <code>sales</code></td>
+<td>Ежедневная выгрузка лекарств с истекающим сроком годности в CSV</td>
+</tr>
+<tr>
+<td style="text-align: right;">14</td>
+<td>PostgreSQL 16</td>
+<td>Ubuntu Server 22.04</td>
+<td>Сервис доставки</td>
+<td><code>orders</code>, <code>couriers</code>, <code>addresses</code></td>
+<td>Расчёт <code>pg_database_size</code> и запись динамики размера БД в лог</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td>MySQL 8</td>
+<td>Ubuntu Server 22.04</td>
+<td>Прокат оборудования</td>
+<td><code>equipment</code>, <code>contracts</code>, <code>returns</code></td>
+<td>Скрипт <code>mysqlcheck --check --auto-repair</code> по расписанию</td>
+</tr>
+<tr>
+<td style="text-align: right;">16</td>
+<td>PostgreSQL 16</td>
+<td>Debian 12</td>
+<td>Ветеринарная клиника</td>
+<td><code>animals</code>, <code>owners</code>, <code>visits</code></td>
+<td>Бэкап только указанных таблиц (<code>-t animals -t visits</code>)</td>
+</tr>
+<tr>
+<td style="text-align: right;">17</td>
+<td>MariaDB 10</td>
+<td>Ubuntu Server 22.04</td>
+<td>Ремонт компьютерной техники</td>
+<td><code>devices</code>, <code>requests</code>, <code>parts</code></td>
+<td>Проверка лога ошибок <code>error.log</code> на ключевые слова <code>ERROR</code>/<code>CRASH</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">18</td>
+<td>MS SQL Server 2022 Express</td>
+<td>Windows Server 2019</td>
+<td>Цветочный магазин</td>
+<td><code>bouquets</code>, <code>orders</code>, <code>clients</code></td>
+<td>PowerShell-скрипт <code>BACKUP DATABASE</code> с датой в имени</td>
+</tr>
+<tr>
+<td style="text-align: right;">19</td>
+<td>MS SQL Server 2022 Express</td>
+<td>Windows Server 2019</td>
+<td>Агентство недвижимости</td>
+<td><code>objects</code>, <code>agents</code>, <code>deals</code></td>
+<td>PowerShell: проверка размера журнала транзакций и его усечение</td>
+</tr>
+<tr>
+<td style="text-align: right;">20</td>
+<td>MS SQL Server 2022 Express</td>
+<td>Windows Server 2022</td>
+<td>Парикмахерская</td>
+<td><code>clients</code>, <code>masters</code>, <code>services</code></td>
+<td>PowerShell-скрипт восстановления тестовой копии БД из последнего бэкапа</td>
+</tr>
+<tr>
+<td style="text-align: right;">21</td>
+<td>MS SQL Server 2019 Express</td>
+<td>Windows Server 2019</td>
+<td>Музыкальная школа</td>
+<td><code>students</code>, <code>teachers</code>, <code>lessons</code></td>
+<td>PowerShell-скрипт пересчёта статистики (<code>UPDATE STATISTICS</code>)</td>
+</tr>
+<tr>
+<td style="text-align: right;">22</td>
+<td>MySQL 8</td>
+<td>Windows Server 2019</td>
+<td>Детский сад</td>
+<td><code>children</code>, <code>groups</code>, <code>parents</code></td>
+<td>PowerShell: вызов <code>mysqldump.exe</code> с автообновляющимся именем</td>
+</tr>
+<tr>
+<td style="text-align: right;">23</td>
+<td>PostgreSQL 16</td>
+<td>Windows Server 2019</td>
+<td>Логистическая компания</td>
+<td><code>routes</code>, <code>drivers</code>, <code>vehicles</code></td>
+<td>PowerShell: вызов <code>pg_dump.exe</code> + проверка SHA-256</td>
+</tr>
+<tr>
+<td style="text-align: right;">24</td>
+<td>MariaDB 10</td>
+<td>Ubuntu Server 22.04</td>
+<td>Интернет-провайдер</td>
+<td><code>subscribers</code>, <code>tariffs</code>, <code>payments</code></td>
+<td>Скрипт «сколько подписчиков на каждом тарифе» в CSV-файл</td>
+</tr>
+<tr>
+<td style="text-align: right;">25</td>
+<td>PostgreSQL 16</td>
+<td>Debian 12</td>
+<td>Страховая компания</td>
+<td><code>clients</code>, <code>policies</code>, <code>claims</code></td>
+<td>Бэкап + проверка <code>pg_restore --list</code> распакован ли архив корректно</td>
+</tr>
+<tr>
+<td style="text-align: right;">26</td>
+<td>MySQL 8</td>
+<td>Ubuntu Server 22.04</td>
+<td>Ресторан</td>
+<td><code>menu</code>, <code>orders</code>, <code>staff</code></td>
+<td>Скрипт «топ-10 блюд за вчерашний день» в файл <code>top_dishes.txt</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">27</td>
+<td>PostgreSQL 16</td>
+<td>Ubuntu Server 22.04</td>
+<td>Фотоателье</td>
+<td><code>clients</code>, <code>orders</code>, <code>services</code></td>
+<td>Ежедневный отчёт по агрегатам <code>count(*) GROUP BY service</code> в лог</td>
+</tr>
+<tr>
+<td style="text-align: right;">28</td>
+<td>MS SQL Server 2022 Express</td>
+<td>Windows Server 2019</td>
+<td>Магазин одежды</td>
+<td><code>items</code>, <code>sizes</code>, <code>sales</code></td>
+<td>PowerShell: BACKUP + копирование файла на сетевой ресурс (или в другую папку)</td>
+</tr>
+<tr>
+<td style="text-align: right;">29</td>
+<td>MariaDB 10</td>
+<td>Debian 12</td>
+<td>Служба такси</td>
+<td><code>clients</code>, <code>drivers</code>, <code>trips</code></td>
+<td>Архивация поездок старше 60 дней + обновление статистики таблиц</td>
+</tr>
+<tr>
+<td style="text-align: right;">30</td>
+<td>MySQL 8</td>
+<td>Ubuntu Server 22.04</td>
+<td>Производственное предприятие</td>
+<td><code>products</code>, <code>materials</code>, <code>orders</code></td>
+<td>Бэкап + email-симуляция: запись «отправлено уведомление» в лог при успехе/ошибке</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_2">Обязательная индивидуальная доработка<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>Помимо четырёх обязательных блоков из таблицы, студент <strong>добавляет к своему скрипту автоматизации одно из расширений</strong>:</p>
+<ol>
+<li>Логирование начала и конца выполнения с длительностью в миллисекундах.</li>
+<li>Проверка кода возврата шага бэкапа и аварийный выход при ошибке.</li>
+<li>Подсчёт SHA-256 итогового файла и сохранение рядом.</li>
+<li>Удаление файлов старше N дней по списку расширений.</li>
+<li>Чтение настроек из отдельного <code>.env</code>/<code>config.ini</code> вместо «зашитых» значений.</li>
+<li>Различные уровни сообщений в логе: <code>INFO</code>, <code>WARN</code>, <code>ERROR</code>.</li>
+<li>Проверка свободного места на диске перед запуском бэкапа.</li>
+</ol>
+<p>Расширение должно быть описано в отчёте: что добавлено, как проверено, как изменился лог.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  К началу
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["content.code.copy", "navigation.top", "navigation.tracking", "toc.follow"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
