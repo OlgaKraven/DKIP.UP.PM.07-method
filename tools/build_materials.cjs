@@ -13,6 +13,17 @@ const methodFiles=['index.md','practice/stage1.md','practice/stage2.md','practic
 const esc=s=>s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 const identity=file=>'doc-'+file.replaceAll(/[^a-z0-9]/gi,'-');
 
+function updateSubjectIndex(){
+ const source=fs.readFileSync(path.join(DOCS,'subject_areas.md'),'utf8');
+ const rows=[...source.matchAll(/^## Вариант (\d{2}) · (.+)\r?\n([\s\S]*?)(?=^## |$(?![\s\S]))/gm)].map(m=>{
+  const profile=m[3].match(/СУБД: \*\*(.+?)\*\*\. ОС: \*\*(.+?)\*\*/);
+  if(!profile)throw new Error('Missing subject profile '+m[1]);
+  return `| ${m[1]} | ${m[2]} | ${profile[1]} | ${profile[2]} | docs/downloads/variant-${m[1]}.sql |`;
+ });
+ if(rows.length!==30)throw new Error('Expected 30 subject cards');
+ fs.writeFileSync(path.join(ROOT,'maintenance','subject-index.md'),'# Индекс предметных областей для импорта\n\nПроизводная таблица из docs/subject_areas.md; обновляется сборщиком материалов. Учебное содержание редактируется только в исходных карточках.\n\n| № | Предметная область | СУБД | ОС | SQL |\n| --- | --- | --- | --- | --- |\n'+rows.join('\n')+'\n');
+}
+
 function splitCode(token){
  const lines=token.text.split('\n'),parts=[];let start=0;
  while(start<lines.length){
@@ -48,6 +59,8 @@ function fixLinks(html,file,kind){
 const plain=html=>html.replace(/<[^>]*>/g,' ').replaceAll('&lt;','<').replaceAll('&gt;','>').replaceAll('&quot;','"').replaceAll('&#39;',"'").replaceAll('&amp;','&');
 
 (async()=>{
+ updateSubjectIndex();
+ if(process.argv.includes('--index-only')){process.stdout.write('30 subject entries exported\n');return;}
  const {marked}=await import(pathToFileURL(require.resolve('marked')).href);
  fs.mkdirSync(OUT,{recursive:true});
  fs.cpSync(path.join(DOCS,'assets'),path.join(OUT,'assets'),{recursive:true});
