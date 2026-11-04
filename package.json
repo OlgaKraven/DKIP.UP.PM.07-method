@@ -1,0 +1,5 @@
+{
+  "private": true,
+  "scripts": {"materials": "node tools/build_materials.cjs"},
+  "devDependencies": {"marked": "17.0.5", "playwright": "1.62.1"}
+}

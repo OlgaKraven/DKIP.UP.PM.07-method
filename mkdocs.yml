@@ -23,10 +23,19 @@ nav:
       - Этап 3. Резервное копирование и восстановление: theory/stage3.md
       - Этап 4. Автоматизация рутинных операций: theory/stage4.md
   - Практика:
-      - Этап 1. Установка СУБД и проверка работы сервера: practice/stage1.md
+      - Этап 1. Выбор маршрута и подключение: practice/stage1.md
       - Этап 2. Создание пользователей и проверка прав: practice/stage2.md
       - Этап 3. Резервная копия и восстановление: practice/stage3.md
       - Этап 4. Скрипт автоматизации и расписание: practice/stage4.md
+
+  - Маршруты по ОС и СУБД:
+      - MySQL · Linux: routes/mysql-linux.md
+      - MariaDB · Linux: routes/maria-linux.md
+      - PostgreSQL · Linux: routes/pg-linux.md
+      - SQL Server Express · Windows: routes/mssql-windows.md
+      - MySQL · Windows: routes/mysql-windows.md
+      - PostgreSQL · Windows: routes/pg-windows.md
+  - Документация команд: sources.md
 
 markdown_extensions:
   - tables
