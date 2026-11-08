@@ -1547,7 +1547,7 @@
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/pm07&quot;</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nb">pwd</span>
 </code></pre></div>
-<p>Сохраните сюда SQL своей карточки как input.sql. Работа начинается с готовой схемы, а не с повторной разработки таблиц. Разбор использует pm07_demo; ваша сдаваемая база с самого начала называется по своему номеру.</p>
+<p>Сохраните в этой папке SQL своей карточки под именем input.sql. Если файл скачан на другой компьютер, выполните <a href="../practice/stage1.html">перенос и проверку файла</a>. Разбор использует pm07_demo; в своих командах укажите имя базы по номеру варианта.</p>
 <h3 id="_5">Войдите начальным администратором<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <p>Откройте psql из выданного каталога клиента. Подключитесь к базе postgres от начальной роли postgres; если роль называется иначе, используйте паспорт. Пример параметров: host 127.0.0.1, port 5432. После запроса введите пароль интерактивно. В клиенте выполните следующий SQL после подстановок:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="k">version</span><span class="p">(),</span><span class="w"> </span><span class="k">current_user</span><span class="p">,</span><span class="w"> </span><span class="n">current_database</span><span class="p">();</span>
@@ -1677,7 +1677,7 @@
 <a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>tail<span class="w"> </span>-n<span class="w"> </span><span class="m">8</span><span class="w"> </span>logs/run.log
 <a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>ls<span class="w"> </span>-l<span class="w"> </span>out<span class="w"> </span>backups
 </code></pre></div>
-<p>Ожидаются код 0, новая пара START/END и результат именно своей операции. Для отрицательной проверки скопируйте config.env в config-test.env и run.sh в run-test.sh; в копии скрипта замените имя подключаемого файла на config-test.env. В тестовом конфиге задайте несуществующую базу. Запустите копию: ожидаются ненулевой код и ERROR. После опыта основной run.sh и рабочий конфиг остаются исходными. Для задач, не обращающихся к БД, меняется тестовый вход операции: путь к исходному файлу или каталогу, как указано в карточке.</p>
+<p>Ожидаются код 0, новая пара START/END и результат из карточки. Подготовьте <a href="../practice/stage4.html">проверку отказа</a> в отдельной копии. Варианты 02, 05, 06 и 17 используют условие отказа из своей карточки. Для операций с БД используйте несуществующую базу в тестовой конфигурации. Сверьте ненулевой код и свежую строку ERROR.</p>
 <h3 id="cron">Ближайший запуск cron<a class="headerlink" href="#cron" title="Permanent link">&para;</a></h3>
 <p>На учебной Linux-машине под тем же пользователем выполните crontab -e. Если редактор выбирается впервые, выберите nano. В конце добавьте две строки; в имени рабочей папки не должно быть пробелов. $HOME задаётся cron для владельца этой записи, поэтому профиль другого пользователя здесь не используется.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>SHELL=/bin/bash
