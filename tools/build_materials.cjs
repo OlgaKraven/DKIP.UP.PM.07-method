@@ -7,7 +7,8 @@ const {chromium}=require('playwright');
 const ROOT=path.resolve(__dirname,'..');
 const DOCS=path.join(ROOT,'docs');
 const OUT=path.join(ROOT,'work','pdf-preview');
-const RAW='https://raw.githubusercontent.com/OlgaKraven/DKIP.UP.PM.07-method/refs/heads/codex/up07-method-editorial/docs/';
+const RAW='https://raw.githubusercontent.com/OlgaKraven/DKIP.UP.PM.07-method/main/docs/';
+const SITE='https://olgakraven.github.io/DKIP.UP.PM.07-method/';
 const ROUTES=['mysql-linux','maria-linux','pg-linux','mssql-windows','mysql-windows','pg-windows'];
 const methodFiles=['index.md','practice/stage1.md','practice/stage2.md','practice/stage3.md','practice/stage4.md',...ROUTES.map(x=>'routes/'+x+'.md'),...Array.from({length:4},(_,i)=>'theory/stage'+(i+1)+'.md'),'sources.md'];
 const esc=s=>s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
@@ -53,7 +54,8 @@ function fixLinks(html,file,kind){
   if(/^(https?:|mailto:|#)/.test(href))return `href="${href}"`;
   const parts=href.split('#');const target=path.posix.normalize(path.posix.join(path.posix.dirname(file),parts[0]));
   if(kind==='method'&&methodFiles.includes(target))return `href="#${identity(target)}"`;
-  return `href="${RAW+target+(parts[1]?'#'+parts[1]:'')}"`;
+  const url=target.endsWith('.md')?SITE+target.replace(/\.md$/,'.html'):RAW+target;
+  return `href="${url+(parts[1]?'#'+parts[1]:'')}"`;
  });
 }
 const plain=html=>html.replace(/<[^>]*>/g,' ').replaceAll('&lt;','<').replaceAll('&gt;','>').replaceAll('&quot;','"').replaceAll('&#39;',"'").replaceAll('&amp;','&');
@@ -121,7 +123,7 @@ const plain=html=>html.replace(/<[^>]*>/g,' ').replaceAll('&lt;','<').replaceAll
  function shell(title,body,kind){
   return `<!doctype html><html lang="ru"><head><meta charset="utf-8"><title>${esc(title)}</title><link rel="stylesheet" href="assets/style.css"></head><body><main class="${kind}"><header class="hero"><div class="section-id">Учебная практика ПМ.07</div><h1>${esc(title)}</h1></header>${body}</main></body></html>`;
  }
- const toc='<section class="file-links"><h2>Выберите свой маршрут</h2><p>Общее задание и проверки выполняются всеми. Из шести маршрутов ниже выполняется только один — по ОС и СУБД своего варианта.</p>'+ROUTES.map(r=>`<p><a href="#${identity('routes/'+r+'.md')}">${esc(sourceTitles['routes/'+r+'.md'])}</a></p>`).join('')+'</section>';
+ const toc='<section class="file-links"><h2>Выберите свой маршрут</h2><p>Найдите себя в списке группы и откройте вариант с тем же номером в отдельном файле «Список предметных областей». Из шести маршрутов выполните один по ОС и СУБД из карточки.</p>'+ROUTES.map(r=>`<p><a href="#${identity('routes/'+r+'.md')}">${esc(sourceTitles['routes/'+r+'.md'])}</a></p>`).join('')+'</section>';
  fs.writeFileSync(path.join(OUT,'method.html'),shell('Задание и методические рекомендации',toc+methodFiles.map(f=>renderFile(f,'method')).join(''),'method'));
  fs.writeFileSync(path.join(OUT,'areas.html'),shell('Список предметных областей',renderFile('subject_areas.md','areas'),'areas'));
  fs.writeFileSync(path.join(OUT,'expected-text.json'),JSON.stringify(expected,null,2));
