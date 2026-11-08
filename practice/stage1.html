@@ -19,15 +19,15 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
     
     
       
-        <title>Этап 1. Установка СУБД и проверка работы сервера - Учебная практика ПМ.07 — Соадминистрирование и автоматизация баз данных и серверов</title>
+        <title>Этап 1. Выбор маршрута и подключение - Учебная практика ПМ.07 — Соадминистрирование и автоматизация баз данных и серверов</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
       
       
 
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1" class="md-skip">
+        <a href="#_1" class="md-skip">
           Перейти к содержанию
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Этап 1. Установка СУБД и проверка работы сервера
+              Этап 1. Выбор маршрута и подключение
             
           </span>
         </div>
@@ -481,7 +481,7 @@
   <span class="md-ellipsis">
     
   
-    Этап 1. Установка СУБД и проверка работы сервера
+    Этап 1. Выбор маршрута и подключение
   
 
     
@@ -499,7 +499,7 @@
   <span class="md-ellipsis">
     
   
-    Этап 1. Установка СУБД и проверка работы сервера
+    Этап 1. Выбор маршрута и подключение
   
 
     
@@ -525,21 +525,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Задание
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Ход работы
+        До первого действия
       
     </span>
   </a>
@@ -550,19 +539,41 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Шаги
+        Правило выбора
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Шаги">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        С чего начать в своём проекте
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dbeaver" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Подключение в DBeaver: разбор на образце
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Подключение в DBeaver: разбор на образце">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1_1" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Виртуальная машина
+        Выберите свой драйвер
       
     </span>
   </a>
@@ -570,10 +581,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Установка СУБД
+        Перепишите параметры из паспорта
       
     </span>
   </a>
@@ -581,10 +592,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Конфигурационный файл
+        Введите пароль в отдельном окне
       
     </span>
   </a>
@@ -592,10 +603,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-cli-vm" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Подключение из CLI на самой VM
+        Откройте консоль и выполните запрос
       
     </span>
   </a>
@@ -603,43 +614,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-vm" class="md-nav__link">
+  <a href="#cli" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Проверка порта изнутри VM
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6. Подключение с хоста
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        7. Создание рабочей базы
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#8" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        8. Запись в журнал администратора
+        Сопоставьте результат с CLI
       
     </span>
   </a>
@@ -648,28 +626,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Контрольные проверки этапа
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Артефакты этапа
-      
-    </span>
-  </a>
   
 </li>
       
@@ -773,6 +729,255 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Маршруты по ОС и СУБД
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Маршруты по ОС и СУБД
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../routes/mysql-linux.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MySQL · Linux
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../routes/maria-linux.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MariaDB · Linux
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../routes/pg-linux.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PostgreSQL · Linux
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../routes/mssql-windows.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SQL Server Express · Windows
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../routes/mysql-windows.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MySQL · Windows
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../routes/pg-windows.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PostgreSQL · Windows
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sources.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Документация команд
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -800,21 +1005,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Задание
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Ход работы
+        До первого действия
       
     </span>
   </a>
@@ -825,19 +1019,41 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Шаги
+        Правило выбора
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Шаги">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        С чего начать в своём проекте
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dbeaver" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Подключение в DBeaver: разбор на образце
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Подключение в DBeaver: разбор на образце">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1_1" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Виртуальная машина
+        Выберите свой драйвер
       
     </span>
   </a>
@@ -845,10 +1061,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Установка СУБД
+        Перепишите параметры из паспорта
       
     </span>
   </a>
@@ -856,10 +1072,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Конфигурационный файл
+        Введите пароль в отдельном окне
       
     </span>
   </a>
@@ -867,10 +1083,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-cli-vm" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Подключение из CLI на самой VM
+        Откройте консоль и выполните запрос
       
     </span>
   </a>
@@ -878,43 +1094,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-vm" class="md-nav__link">
+  <a href="#cli" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Проверка порта изнутри VM
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6. Подключение с хоста
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        7. Создание рабочей базы
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#8" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        8. Запись в журнал администратора
+        Сопоставьте результат с CLI
       
     </span>
   </a>
@@ -923,28 +1106,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Контрольные проверки этапа
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Артефакты этапа
-      
-    </span>
-  </a>
   
 </li>
       
@@ -965,228 +1126,70 @@
 
 
 
-<h1 id="1">Этап 1. Установка СУБД и проверка работы сервера<a class="headerlink" href="#1" title="Permanent link">&para;</a></h1>
-<h2 id="_1">Задание<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Развернуть виртуальную машину, установить указанную в варианте СУБД, убедиться, что служба работает, подключиться к серверу из консольного и графического клиента, зафиксировать ключевые настройки.</p>
-<h2 id="_2">Ход работы<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>Создайте виртуальную машину с параметрами не ниже минимальных (2 ядра, 2 ГБ RAM, 20 ГБ диск). На гостевой ОС обновите пакеты, установите СУБД из своего варианта, проверьте статус службы, подключитесь к серверу. Подключение должно работать <strong>как с самой VM</strong> (CLI), <strong>так и с хоста</strong> (GUI). После проверки соберите артефакты этапа.</p>
-<h2 id="_3">Шаги<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<h3 id="1_1">1. Виртуальная машина<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h3>
-<p>В VirtualBox или VMware:</p>
-<ol>
-<li>Скачайте ISO выбранной ОС (Ubuntu Server 22.04, Debian 12, Windows Server 2019/2022).</li>
-<li>Создайте VM: 2 CPU, 2 ГБ RAM (для MS SQL — 3 ГБ), 20 ГБ HDD динамический.</li>
-<li>В разделе <strong>Network</strong> включите проброс порта:</li>
-<li>Linux/MySQL: Host <code>13306</code> → Guest <code>3306</code>;</li>
-<li>Linux/PostgreSQL: Host <code>15432</code> → Guest <code>5432</code>;</li>
-<li>Linux/MariaDB: Host <code>13306</code> → Guest <code>3306</code>;</li>
-<li>Windows/MS SQL: Host <code>11433</code> → Guest <code>1433</code>.</li>
-<li>Установите ОС, обновите пакеты.</li>
-</ol>
-<p>Для Linux:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>upgrade<span class="w"> </span>-y
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo<span class="w"> </span>reboot
-</code></pre></div>
-<h3 id="2">2. Установка СУБД<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
-<p><strong>Вариант с MySQL 8 на Ubuntu/Debian</strong>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>mysql-server
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>--now<span class="w"> </span>mysql
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>mysql
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>sudo<span class="w"> </span>mysql_secure_installation
-</code></pre></div>
-<p>При запуске <code>mysql_secure_installation</code> отвечайте: пароль <code>root</code> поставить, тестовую БД и анонимных пользователей удалить, удалённый вход <code>root</code> запретить.</p>
-<p><strong>Вариант с MariaDB на Ubuntu/Debian</strong>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>mariadb-server
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>--now<span class="w"> </span>mariadb
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>mariadb
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>sudo<span class="w"> </span>mysql_secure_installation
-</code></pre></div>
-<p><strong>Вариант с PostgreSQL 16 на Ubuntu/Debian</strong>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>postgresql<span class="w"> </span>postgresql-contrib
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>--now<span class="w"> </span>postgresql
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>status<span class="w"> </span>postgresql
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>sudo<span class="w"> </span>-u<span class="w"> </span>postgres<span class="w"> </span>psql<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;SELECT version();&quot;</span>
-</code></pre></div>
-<p><strong>Вариант с MS SQL Server 2022 Express на Windows Server</strong>:</p>
-<ol>
-<li>Скачайте <code>SQL2022-SSEI-Expr.exe</code> и <code>SSMS-Setup-ENU.exe</code>.</li>
-<li>Запустите установщик SQL Server, выберите <strong>Basic</strong>.</li>
-<li>В <strong>SQL Server Configuration Manager</strong> включите TCP/IP, перезапустите службу <code>SQL Server (SQLEXPRESS)</code>.</li>
-<li>Установите SSMS.</li>
-<li>PowerShell-проверка:</li>
-</ol>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">Get-Service</span> <span class="n">-Name</span> <span class="s2">&quot;MSSQL</span><span class="se">`$</span><span class="s2">SQLEXPRESS&quot;</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">sqlcmd</span> <span class="n">-S</span> <span class="p">.\</span><span class="n">SQLEXPRESS</span> <span class="n">-E</span> <span class="n">-Q</span> <span class="s2">&quot;SELECT @@VERSION;&quot;</span>
-</code></pre></div>
-<h3 id="3">3. Конфигурационный файл<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
-<p>Откройте основной конфиг и проверьте/измените три параметра: порт, адрес прослушивания, кодировка.</p>
-<p><strong>MySQL/MariaDB</strong> (<code>/etc/mysql/mysql.conf.d/mysqld.cnf</code> или <code>/etc/mysql/mariadb.conf.d/50-server.cnf</code>):</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">[mysqld]</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="na">port</span><span class="w">            </span><span class="o">=</span><span class="w"> </span><span class="s">3306</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="na">bind-address</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="s">0.0.0.0</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="na">character-set-server</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">utf8mb4</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="na">collation-server</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="s">utf8mb4_unicode_ci</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="na">log_error</span><span class="w">       </span><span class="o">=</span><span class="w"> </span><span class="s">/var/log/mysql/error.log</span>
-</code></pre></div>
-<p><strong>PostgreSQL</strong> (<code>/etc/postgresql/16/main/postgresql.conf</code>):</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>port = 5432
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>listen_addresses = &#39;*&#39;
-</code></pre></div>
-<p>В <code>/etc/postgresql/16/main/pg_hba.conf</code> добавьте:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>host    all    all    0.0.0.0/0    scram-sha-256
-</code></pre></div>
-<p><strong>MS SQL</strong> — параметры в SQL Server Configuration Manager → SQL Server Network Configuration → Protocols for SQLEXPRESS → TCP/IP → IPAll → TCP Port = <code>1433</code>.</p>
-<p>Перезапустите службу:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>restart<span class="w"> </span>mysql<span class="w">        </span><span class="c1"># или: mariadb / postgresql</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nb">Restart-Service</span> <span class="s2">&quot;MSSQL</span><span class="se">`$</span><span class="s2">SQLEXPRESS&quot;</span>
-</code></pre></div>
-<h3 id="4-cli-vm">4. Подключение из CLI на самой VM<a class="headerlink" href="#4-cli-vm" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>mysql<span class="w"> </span>-u<span class="w"> </span>root<span class="w"> </span>-p<span class="w">                                   </span><span class="c1"># MySQL/MariaDB</span>
-<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>sudo<span class="w"> </span>-u<span class="w"> </span>postgres<span class="w"> </span>psql<span class="w">                              </span><span class="c1"># PostgreSQL (local)</span>
-<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>sqlcmd<span class="w"> </span>-S<span class="w"> </span>.<span class="se">\S</span>QLEXPRESS<span class="w"> </span>-E<span class="w">                          </span><span class="c1"># MS SQL</span>
-</code></pre></div>
-<p>В клиенте выполните:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="k">VERSION</span><span class="p">();</span><span class="w">                  </span><span class="c1">-- MySQL/MariaDB</span>
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="k">SHOW</span><span class="w"> </span><span class="n">DATABASES</span><span class="p">;</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="k">version</span><span class="p">();</span><span class="w">                  </span><span class="c1">-- PostgreSQL</span>
-<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="err">\</span><span class="n">l</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">@@</span><span class="k">VERSION</span><span class="p">;</span><span class="w">                  </span><span class="c1">-- MS SQL</span>
-<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">sys</span><span class="p">.</span><span class="n">databases</span><span class="p">;</span>
-</code></pre></div>
-<h3 id="5-vm">5. Проверка порта изнутри VM<a class="headerlink" href="#5-vm" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>sudo<span class="w"> </span>ss<span class="w"> </span>-tlnp<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s1">&#39;3306|5432&#39;</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="nb">Get-NetTCPConnection</span> <span class="n">-LocalPort</span> <span class="n">1433</span> <span class="p">|</span> <span class="nb">Format-Table</span> <span class="n">-Auto</span>
-</code></pre></div>
-<p>Должна быть строка <code>LISTEN</code> на нужном порту.</p>
-<h3 id="6">6. Подключение с хоста<a class="headerlink" href="#6" title="Permanent link">&para;</a></h3>
-<p>С хост-машины проверьте, что порт виден:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="c1"># Linux/macOS хост</span>
-<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>nc<span class="w"> </span>-vz<span class="w"> </span><span class="m">127</span>.0.0.1<span class="w"> </span><span class="m">13306</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="c"># Windows хост</span>
-<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="nb">Test-NetConnection</span> <span class="n">-ComputerName</span> <span class="n">127</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">1</span> <span class="n">-Port</span> <span class="n">13306</span>
-</code></pre></div>
-<p>Установите на хосте GUI-клиент (DBeaver Community) и создайте подключение:</p>
+<h1 id="_1">Выберите один маршрут<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">До первого действия<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>Откройте в отдельном списке областей вариант с вашим номером из списка группы. Выберите маршрут по <strong>обоим</strong> значениям из карточки: СУБД и ОС. Для Ubuntu Server и Debian используйте Linux-маршрут соответствующей СУБД. Версия сервера должна совпадать с карточкой.</p>
 <table>
 <thead>
 <tr>
-<th>Поле</th>
-<th>Значение</th>
+<th>Маршрут</th>
+<th>Когда использовать</th>
+<th>Первое действие</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Host</td>
-<td><code>127.0.0.1</code></td>
+<td><a href="../routes/mysql-linux.html">MySQL 8 · Linux</a></td>
+<td>Варианты 01, 02, 03, 11, 12, 15, 26, 30</td>
+<td>Откройте этот маршрут и заполните его исходные параметры.</td>
 </tr>
 <tr>
-<td>Port</td>
-<td><code>13306</code> / <code>15432</code> / <code>11433</code> (с учётом проброса)</td>
+<td><a href="../routes/maria-linux.html">MariaDB 10 · Linux</a></td>
+<td>Варианты 04, 05, 06, 13, 17, 24, 29</td>
+<td>Откройте этот маршрут и заполните его исходные параметры.</td>
 </tr>
 <tr>
-<td>User</td>
-<td><code>root</code> / <code>postgres</code> / <code>sa</code></td>
+<td><a href="../routes/pg-linux.html">PostgreSQL 15/16 · Linux</a></td>
+<td>Варианты 07, 08, 09, 10, 14, 16, 25, 27</td>
+<td>Откройте этот маршрут и заполните его исходные параметры.</td>
 </tr>
 <tr>
-<td>Password</td>
-<td>пароль, заданный при установке</td>
+<td><a href="../routes/mssql-windows.html">SQL Server Express · Windows</a></td>
+<td>Варианты 18, 19, 20, 21, 28</td>
+<td>Откройте этот маршрут и заполните его исходные параметры.</td>
+</tr>
+<tr>
+<td><a href="../routes/mysql-windows.html">MySQL 8 · Windows</a></td>
+<td>Варианты 22</td>
+<td>Откройте этот маршрут и заполните его исходные параметры.</td>
+</tr>
+<tr>
+<td><a href="../routes/pg-windows.html">PostgreSQL 16 · Windows</a></td>
+<td>Варианты 23</td>
+<td>Откройте этот маршрут и заполните его исходные параметры.</td>
 </tr>
 </tbody>
 </table>
-<p>Подключитесь и сделайте скриншот окна DBeaver со списком баз.</p>
-<h3 id="7">7. Создание рабочей базы<a class="headerlink" href="#7" title="Permanent link">&para;</a></h3>
-<p>В CLI:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">library</span>
-<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="w">    </span><span class="nb">CHARACTER</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">utf8mb4</span>
-<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="w">    </span><span class="k">COLLATE</span><span class="w"> </span><span class="n">utf8mb4_unicode_ci</span><span class="p">;</span><span class="w">          </span><span class="c1">-- MySQL/MariaDB</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">library</span>
-<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="w">    </span><span class="k">ENCODING</span><span class="w"> </span><span class="s1">&#39;UTF8&#39;</span>
-<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="w">    </span><span class="n">LC_COLLATE</span><span class="w"> </span><span class="s1">&#39;C.UTF-8&#39;</span>
-<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="w">    </span><span class="n">LC_CTYPE</span><span class="w"> </span><span class="s1">&#39;C.UTF-8&#39;</span>
-<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="w">    </span><span class="k">TEMPLATE</span><span class="w"> </span><span class="n">template0</span><span class="p">;</span><span class="w">                  </span><span class="c1">-- PostgreSQL</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">Library</span>
-<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="w">    </span><span class="k">COLLATE</span><span class="w"> </span><span class="n">Cyrillic_General_CI_AS</span><span class="p">;</span><span class="w">      </span><span class="c1">-- MS SQL</span>
-</code></pre></div>
-<p>Создайте 2–3 тестовые таблицы своего варианта и наполните их 5–10 строками каждую (структуру и тестовые данные возьмите из учебной практики ПМ.05, если она была).</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="n">USE</span><span class="w"> </span><span class="n">library</span><span class="p">;</span>
-<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">authors</span><span class="w"> </span><span class="p">(</span>
-<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="w">    </span><span class="n">id</span><span class="w"> </span><span class="nb">INT</span><span class="w"> </span><span class="n">AUTO_INCREMENT</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">,</span>
-<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="w">    </span><span class="n">full_name</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
-<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="w">    </span><span class="n">country</span><span class="w">  </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a><span class="p">);</span>
-<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">books</span><span class="w"> </span><span class="p">(</span>
-<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a><span class="w">    </span><span class="n">id</span><span class="w"> </span><span class="nb">INT</span><span class="w"> </span><span class="n">AUTO_INCREMENT</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">,</span>
-<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a><span class="w">    </span><span class="n">title</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
-<a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a><span class="w">    </span><span class="n">author_id</span><span class="w"> </span><span class="nb">INT</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
-<a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a><span class="w">    </span><span class="k">year</span><span class="w"> </span><span class="nb">INT</span><span class="p">,</span>
-<a id="__codelineno-21-12" name="__codelineno-21-12" href="#__codelineno-21-12"></a><span class="w">    </span><span class="k">FOREIGN</span><span class="w"> </span><span class="k">KEY</span><span class="w"> </span><span class="p">(</span><span class="n">author_id</span><span class="p">)</span><span class="w"> </span><span class="k">REFERENCES</span><span class="w"> </span><span class="n">authors</span><span class="p">(</span><span class="n">id</span><span class="p">)</span>
-<a id="__codelineno-21-13" name="__codelineno-21-13" href="#__codelineno-21-13"></a><span class="p">);</span>
-<a id="__codelineno-21-14" name="__codelineno-21-14" href="#__codelineno-21-14"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">authors</span><span class="w"> </span><span class="p">(</span><span class="n">full_name</span><span class="p">,</span><span class="w"> </span><span class="n">country</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span>
-<a id="__codelineno-21-15" name="__codelineno-21-15" href="#__codelineno-21-15"></a><span class="w">    </span><span class="p">(</span><span class="s1">&#39;А. С. Пушкин&#39;</span><span class="p">,</span><span class="s1">&#39;Россия&#39;</span><span class="p">),</span>
-<a id="__codelineno-21-16" name="__codelineno-21-16" href="#__codelineno-21-16"></a><span class="w">    </span><span class="p">(</span><span class="s1">&#39;Н. В. Гоголь&#39;</span><span class="p">,</span><span class="s1">&#39;Россия&#39;</span><span class="p">);</span>
-<a id="__codelineno-21-17" name="__codelineno-21-17" href="#__codelineno-21-17"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">books</span><span class="w"> </span><span class="p">(</span><span class="n">title</span><span class="p">,</span><span class="w"> </span><span class="n">author_id</span><span class="p">,</span><span class="w"> </span><span class="k">year</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span>
-<a id="__codelineno-21-18" name="__codelineno-21-18" href="#__codelineno-21-18"></a><span class="w">    </span><span class="p">(</span><span class="s1">&#39;Капитанская дочка&#39;</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1836</span><span class="p">),</span>
-<a id="__codelineno-21-19" name="__codelineno-21-19" href="#__codelineno-21-19"></a><span class="w">    </span><span class="p">(</span><span class="s1">&#39;Мёртвые души&#39;</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1842</span><span class="p">);</span>
-</code></pre></div>
-<h3 id="8">8. Запись в журнал администратора<a class="headerlink" href="#8" title="Permanent link">&para;</a></h3>
-<p>Создайте файл <code>journal.md</code> (или <code>journal.txt</code>) и сделайте первые записи по форме:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>2026-05-25 09:10 | INSTALL    | &lt;ОС&gt;: установлен &lt;СУБД&gt; &lt;версия&gt;
-<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>2026-05-25 09:30 | CONFIGURE  | bind-address=0.0.0.0; port=&lt;port&gt;; кодировка utf8mb4
-<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>2026-05-25 09:45 | NETWORK    | проброс &lt;host&gt;:&lt;13306&gt; → &lt;guest&gt;:&lt;3306&gt;; nc -vz OK
-<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>2026-05-25 10:00 | DB         | создана БД library; 2 таблицы; вставлено 4 строки
-</code></pre></div>
-<h2 id="_4">Контрольные проверки этапа<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<ul>
-<li>[ ] Команда <code>systemctl status</code> / <code>Get-Service</code> показывает <code>active (running)</code> / <code>Running</code>.</li>
-<li>[ ] <code>ss -tlnp</code> / <code>Get-NetTCPConnection</code> показывает <code>LISTEN</code> на нужном порту.</li>
-<li>[ ] <code>mysql -h 127.0.0.1</code>, <code>psql -h 127.0.0.1</code>, <code>sqlcmd -S 127.0.0.1\SQLEXPRESS</code> — все работают.</li>
-<li>[ ] Хост-машина подключается через DBeaver/SSMS с пробросом порта.</li>
-<li>[ ] Создана рабочая БД с UTF-8.</li>
-<li>[ ] Сделаны 2–3 таблицы и тестовые <code>INSERT</code>.</li>
-<li>[ ] В журнале администратора есть 4 первых записи.</li>
-</ul>
-<h2 id="_5">Артефакты этапа<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Артефакт</th>
-<th>Где взять</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Скриншот статуса службы</td>
-<td><code>systemctl status</code> / Services.msc</td>
-</tr>
-<tr>
-<td>Скриншот <code>ss -tlnp</code> / <code>Get-NetTCPConnection</code></td>
-<td>CLI хоста-сервера</td>
-</tr>
-<tr>
-<td>Скриншот успешного входа в DBeaver/SSMS с хоста</td>
-<td>GUI хоста</td>
-</tr>
-<tr>
-<td>Файл конфигурации</td>
-<td>копия <code>mysqld.cnf</code> / <code>postgresql.conf</code> / экспорт настроек MS SQL</td>
-</tr>
-<tr>
-<td>Скрипт <code>init.sql</code></td>
-<td>команды создания БД и тестовых таблиц</td>
-</tr>
-<tr>
-<td>Журнал администратора</td>
-<td><code>journal.md</code> с 4 записями этапа</td>
-</tr>
-</tbody>
-</table>
+<h2 id="_3">Правило выбора<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>Не выбирайте СУБД по знакомому названию команды. Например, <code>mariadb-dump</code> относится к MariaDB, а <code>pg_restore</code> — к архивам PostgreSQL. SQL Server Express использует Планировщик заданий Windows; SQL Server Agent для этого маршрута не требуется.</p>
+<h2 id="_4">С чего начать в своём проекте<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>Создайте рабочую папку, указанную в маршруте, и сохраните в ней SQL своего варианта. Имена базы, пользователей, таблиц и файлов в готовых командах сначала заменяются по таблице подстановок. Если команда ещё содержит <code>NN</code> или примерное имя базы, выполнять её рано. Точные действия, ожидаемые результаты и объяснения ошибок находятся внутри выбранного маршрута.</p>
+<h2 id="dbeaver">Подключение в DBeaver: разбор на образце<a class="headerlink" href="#dbeaver" title="Permanent link">&para;</a></h2>
+<h3 id="_5">Выберите свой драйвер<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>На снимках показан PostgreSQL и учебная база pm07_demo. Сначала «База данных» → «Новое соединение» либо Ctrl+Shift+N. Выберите PostgreSQL, MySQL, MariaDB или SQL Server <strong>по своей карточке</strong>, затем «Далее». Драйвер PostgreSQL не подходит для MySQL, даже если имя базы одинаковое.</p>
+<p><img alt="Окно выбора драйвера в DBeaver" src="../assets/screenshots/dbeaver-engine.png" /></p>
+<h3 id="_6">Перепишите параметры из паспорта<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>В примере сервер доступен с хоста по 127.0.0.1:15516. У себя перепишите адрес и порт именно клиентского подключения, имя своей базы и readonly. Отключите «Сохранять пароль», затем нажмите «Тест соединения». Названия полей могут быть на русском или английском языке.</p>
+<p><img alt="Параметры PostgreSQL без сохранения пароля" src="../assets/screenshots/pg-connection.png" /></p>
+<h3 id="_7">Введите пароль в отдельном окне<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>Если сохранение отключено, поле Password основной формы недоступно. Введите пароль readonly в появившемся окне авторизации. При запросе Download driver используйте заранее подготовленный преподавателем клиент. Успешный тест должен сообщить об установленном соединении; затем «Готово». При первом открытии консоли пароль может запрашиваться снова: это не ошибка входа.</p>
+<p><img alt="Отдельный запрос пароля выбранной роли" src="../assets/screenshots/dbeaver-password.png" /></p>
+<h3 id="_8">Откройте консоль и выполните запрос<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p>Выделите своё соединение слева. В меню «Редактор SQL» выберите «Open SQL console», либо нажмите Ctrl+Alt+Enter. Вставьте контрольный SELECT своего маршрута; Ctrl+Enter выполняет текущий запрос. В примере три SELECT объединены UNION ALL, чтобы одновременно видеть все предметные таблицы.</p>
+<p><img alt="Действительно выполненный контрольный запрос" src="../assets/screenshots/pg-query.png" /></p>
+<h3 id="cli">Сопоставьте результат с CLI<a class="headerlink" href="#cli" title="Permanent link">&para;</a></h3>
+<p>Внизу появляются строки результата, а не только текст запроса. В образце у каждой таблицы 4 строки, сумма id 10, сумма amount 100; роль readonly. У себя должны совпасть имена и значения своего SQL-файла. Пустая таблица результатов, запрос к чужой базе или ошибка входа не подтверждают выполнение.</p>
+<p><img alt="Результат трёх контрольных запросов" src="../assets/screenshots/pg-result.png" /></p>
 
 
 
@@ -1242,10 +1245,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "navigation.top", "navigation.tracking", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "navigation.top", "navigation.tracking", "toc.follow"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
       
         <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
       

@@ -19,7 +19,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
     
     
       
@@ -27,7 +27,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
       
       
 
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#3" class="md-skip">
+        <a href="#_1" class="md-skip">
           Перейти к содержанию
         </a>
       
@@ -472,7 +472,7 @@
   <span class="md-ellipsis">
     
   
-    Этап 1. Установка СУБД и проверка работы сервера
+    Этап 1. Выбор маршрута и подключение
   
 
     
@@ -581,21 +581,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Задание
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Ход работы
+        До копирования
       
     </span>
   </a>
@@ -606,148 +595,10 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Шаги
+        Какую базу восстанавливать
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Шаги">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Каталог для бэкапов
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-mysqlmariadb" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Бэкап перед инцидентом: MySQL/MariaDB
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-postgresql" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Бэкап перед инцидентом: PostgreSQL
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-ms-sql" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Бэкап перед инцидентом: MS SQL
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Подсчёт строк до инцидента
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6. Имитация инцидента
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7-mysqlmariadb" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        7. Восстановление: MySQL/MariaDB
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#8-postgresql" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        8. Восстановление: PostgreSQL
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#9-ms-sql" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        9. Восстановление: MS SQL
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#10" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        10. Сверка результата
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#11-sha-256" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        11. Проверка SHA-256
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#12" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        12. Записи в журнал
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -755,7 +606,7 @@
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Контрольные проверки этапа
+        Как понять результат
       
     </span>
   </a>
@@ -766,10 +617,60 @@
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Артефакты этапа
+        Если значения различаются
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#postgresql" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Разбор восстановления PostgreSQL на образце
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Разбор восстановления PostgreSQL на образце">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Сначала зафиксируйте данные
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Создайте архив и запишите точный файл
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Сверьте отдельную восстановленную базу
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -817,6 +718,255 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Маршруты по ОС и СУБД
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Маршруты по ОС и СУБД
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../routes/mysql-linux.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MySQL · Linux
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../routes/maria-linux.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MariaDB · Linux
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../routes/pg-linux.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PostgreSQL · Linux
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../routes/mssql-windows.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SQL Server Express · Windows
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../routes/mysql-windows.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MySQL · Windows
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../routes/pg-windows.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PostgreSQL · Windows
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sources.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Документация команд
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -844,21 +994,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Задание
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Ход работы
+        До копирования
       
     </span>
   </a>
@@ -869,148 +1008,10 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Шаги
+        Какую базу восстанавливать
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Шаги">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Каталог для бэкапов
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-mysqlmariadb" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Бэкап перед инцидентом: MySQL/MariaDB
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-postgresql" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Бэкап перед инцидентом: PostgreSQL
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-ms-sql" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Бэкап перед инцидентом: MS SQL
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Подсчёт строк до инцидента
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6. Имитация инцидента
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7-mysqlmariadb" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        7. Восстановление: MySQL/MariaDB
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#8-postgresql" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        8. Восстановление: PostgreSQL
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#9-ms-sql" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        9. Восстановление: MS SQL
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#10" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        10. Сверка результата
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#11-sha-256" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        11. Проверка SHA-256
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#12" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        12. Записи в журнал
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1018,7 +1019,7 @@
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Контрольные проверки этапа
+        Как понять результат
       
     </span>
   </a>
@@ -1029,10 +1030,60 @@
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Артефакты этапа
+        Если значения различаются
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#postgresql" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Разбор восстановления PostgreSQL на образце
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Разбор восстановления PostgreSQL на образце">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Сначала зафиксируйте данные
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Создайте архив и запишите точный файл
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Сверьте отдельную восстановленную базу
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1053,207 +1104,26 @@
 
 
 
-<h1 id="3">Этап 3. Резервная копия и восстановление<a class="headerlink" href="#3" title="Permanent link">&para;</a></h1>
-<h2 id="_1">Задание<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Сделать <strong>полный логический бэкап</strong> рабочей базы данных, проверить целостность файла бэкапа, повредить таблицу (удалить запись или таблицу целиком), восстановить базу из бэкапа, сверить количество строк до и после, зафиксировать всё в журнале.</p>
-<h2 id="_2">Ход работы<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>Бэкап делается из-под учётной записи <code>admin</code>. Файл бэкапа сохраняется в отдельный каталог <code>~/backups</code> (или <code>D:\Backups</code> на Windows) — <strong>вне</strong> каталога данных СУБД. Для каждого файла бэкапа считается контрольная сумма SHA-256. Затем имитируется «инцидент» (удаление таблицы), и база восстанавливается. Сверка происходит по <code>COUNT(*)</code> для каждой таблицы.</p>
-<h2 id="_3">Шаги<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<h3 id="1">1. Каталог для бэкапов<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>~/backups
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>chmod<span class="w"> </span><span class="m">700</span><span class="w"> </span>~/backups
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">New-Item</span> <span class="n">-ItemType</span> <span class="n">Directory</span> <span class="n">-Path</span> <span class="s2">&quot;D:\Backups&quot;</span> <span class="n">-Force</span>
-</code></pre></div>
-<h3 id="2-mysqlmariadb">2. Бэкап перед инцидентом: MySQL/MariaDB<a class="headerlink" href="#2-mysqlmariadb" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nv">TS</span><span class="o">=</span><span class="k">$(</span>date<span class="w"> </span>+<span class="s1">&#39;%Y-%m-%d_%H-%M-%S&#39;</span><span class="k">)</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>mysqldump<span class="w"> </span>-u<span class="w"> </span>admin<span class="w"> </span>-p<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span>--single-transaction<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span>--routines<span class="w"> </span>--triggers<span class="w"> </span>--events<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span>library<span class="w"> </span>&gt;<span class="w"> </span>~/backups/library_<span class="si">${</span><span class="nv">TS</span><span class="si">}</span>.sql
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>ls<span class="w"> </span>-lh<span class="w"> </span>~/backups/
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>head<span class="w"> </span>-30<span class="w"> </span>~/backups/library_<span class="si">${</span><span class="nv">TS</span><span class="si">}</span>.sql
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>grep<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;INSERT INTO&quot;</span><span class="w"> </span>~/backups/library_<span class="si">${</span><span class="nv">TS</span><span class="si">}</span>.sql
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>sha256sum<span class="w"> </span>~/backups/library_<span class="si">${</span><span class="nv">TS</span><span class="si">}</span>.sql<span class="w"> </span><span class="p">|</span><span class="w"> </span>tee<span class="w"> </span>~/backups/library_<span class="si">${</span><span class="nv">TS</span><span class="si">}</span>.sql.sha256
-</code></pre></div>
-<p>Откройте файл редактором и убедитесь, что внутри есть:</p>
-<ul>
-<li><code>CREATE DATABASE</code> (если использовали <code>--databases</code>);</li>
-<li><code>CREATE TABLE authors</code>, <code>CREATE TABLE books</code>;</li>
-<li><code>INSERT INTO authors</code>, <code>INSERT INTO books</code>.</li>
-</ul>
-<h3 id="3-postgresql">3. Бэкап перед инцидентом: PostgreSQL<a class="headerlink" href="#3-postgresql" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nv">TS</span><span class="o">=</span><span class="k">$(</span>date<span class="w"> </span>+<span class="s1">&#39;%Y-%m-%d_%H-%M-%S&#39;</span><span class="k">)</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="c1"># Текстовый формат</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>pg_dump<span class="w"> </span>-h<span class="w"> </span><span class="m">127</span>.0.0.1<span class="w"> </span>-U<span class="w"> </span>admin<span class="w"> </span>-d<span class="w"> </span>library<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span>-F<span class="w"> </span>p<span class="w"> </span>-f<span class="w"> </span>~/backups/library_<span class="si">${</span><span class="nv">TS</span><span class="si">}</span>.sql
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="c1"># Custom-архив с компрессией (рекомендуется)</span>
-<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>pg_dump<span class="w"> </span>-h<span class="w"> </span><span class="m">127</span>.0.0.1<span class="w"> </span>-U<span class="w"> </span>admin<span class="w"> </span>-d<span class="w"> </span>library<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span>-F<span class="w"> </span>c<span class="w"> </span>-f<span class="w"> </span>~/backups/library_<span class="si">${</span><span class="nv">TS</span><span class="si">}</span>.dump
-<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
-<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>pg_restore<span class="w"> </span>--list<span class="w"> </span>~/backups/library_<span class="si">${</span><span class="nv">TS</span><span class="si">}</span>.dump<span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-20
-<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>sha256sum<span class="w"> </span>~/backups/library_<span class="si">${</span><span class="nv">TS</span><span class="si">}</span>.dump<span class="w"> </span><span class="p">|</span><span class="w"> </span>tee<span class="w"> </span>~/backups/library_<span class="si">${</span><span class="nv">TS</span><span class="si">}</span>.dump.sha256
-</code></pre></div>
-<h3 id="4-ms-sql">4. Бэкап перед инцидентом: MS SQL<a class="headerlink" href="#4-ms-sql" title="Permanent link">&para;</a></h3>
-<p>В SSMS:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">DECLARE</span><span class="w"> </span><span class="o">@</span><span class="n">file</span><span class="w"> </span><span class="n">NVARCHAR</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span><span class="w"> </span><span class="o">=</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="s1">&#39;D:\Backups\Library_&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="k">REPLACE</span><span class="p">(</span><span class="k">CONVERT</span><span class="p">(</span><span class="nb">VARCHAR</span><span class="p">,</span><span class="w"> </span><span class="n">GETDATE</span><span class="p">(),</span><span class="w"> </span><span class="mi">120</span><span class="p">),</span><span class="s1">&#39;:&#39;</span><span class="p">,</span><span class="s1">&#39;-&#39;</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s1">&#39;.bak&#39;</span><span class="p">;</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="n">BACKUP</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">Library</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="k">TO</span><span class="w"> </span><span class="n">DISK</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">@</span><span class="n">file</span>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="k">WITH</span><span class="w"> </span><span class="n">FORMAT</span><span class="p">,</span><span class="w"> </span><span class="n">INIT</span><span class="p">,</span><span class="w"> </span><span class="n">COMPRESSION</span><span class="p">,</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">     </span><span class="n">NAME</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">N</span><span class="s1">&#39;Library full backup&#39;</span><span class="p">;</span>
-<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>
-<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="n">RESTORE</span><span class="w"> </span><span class="n">VERIFYONLY</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">DISK</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">@</span><span class="n">file</span><span class="p">;</span>
-</code></pre></div>
-<p>В PowerShell-аналоге:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nv">$ts</span> <span class="p">=</span> <span class="nb">Get-Date</span> <span class="n">-Format</span> <span class="s2">&quot;yyyy-MM-dd_HH-mm-ss&quot;</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nv">$file</span> <span class="p">=</span> <span class="s2">&quot;D:\Backups\Library_$ts.bak&quot;</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="nb">Invoke-Sqlcmd</span> <span class="n">-ServerInstance</span> <span class="s2">&quot;.\SQLEXPRESS&quot;</span> <span class="n">-Query</span> <span class="sh">@&quot;</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="sh">BACKUP DATABASE Library</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="sh">TO DISK = &#39;$file&#39;</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="sh">WITH INIT, COMPRESSION;</span>
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="sh">&quot;@</span>
-<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="nb">Get-FileHash</span> <span class="nv">$file</span> <span class="n">-Algorithm</span> <span class="n">SHA256</span> <span class="p">|</span>
-<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>    <span class="nb">Select-Object</span> <span class="n">Hash</span><span class="p">,</span> <span class="n">Path</span> <span class="p">|</span>
-<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>    <span class="nb">Tee-Object</span> <span class="n">-FilePath</span> <span class="s2">&quot;$file.sha256.txt&quot;</span>
-</code></pre></div>
-<h3 id="5">5. Подсчёт строк до инцидента<a class="headerlink" href="#5" title="Permanent link">&para;</a></h3>
-<p>В клиенте СУБД выполните и сохраните вывод:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="s1">&#39;authors&#39;</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="k">rows</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">authors</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="k">UNION</span><span class="w"> </span><span class="k">ALL</span>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">SELECT</span><span class="w"> </span><span class="s1">&#39;books&#39;</span><span class="p">,</span><span class="w">   </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">books</span><span class="p">;</span>
-</code></pre></div>
-<p>Сохраните результат в файл <code>rows_before.txt</code>.</p>
-<h3 id="6">6. Имитация инцидента<a class="headerlink" href="#6" title="Permanent link">&para;</a></h3>
-<p>Под <code>admin</code> выполните <strong>одно</strong> из:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1">-- Вариант A: удаление одной таблицы</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="k">DROP</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">books</span><span class="p">;</span>
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="c1">-- Вариант B: массовое удаление</span>
-<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="k">DELETE</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">books</span><span class="p">;</span>
-</code></pre></div>
-<p>Подтвердите, что таблица потерялась:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">books</span><span class="p">;</span><span class="w">                    </span><span class="c1">-- ERROR: table doesn&#39;t exist (или 0 rows)</span>
-</code></pre></div>
-<p>Запишите в журнал, что именно сделали и в какое время.</p>
-<h3 id="7-mysqlmariadb">7. Восстановление: MySQL/MariaDB<a class="headerlink" href="#7-mysqlmariadb" title="Permanent link">&para;</a></h3>
-<p>Создайте «карантинную» БД для проверки:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">library_restore</span><span class="w"> </span><span class="nb">CHARACTER</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">utf8mb4</span><span class="p">;</span>
-</code></pre></div>
-<p>Восстановите дамп в неё:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>mysql<span class="w"> </span>-u<span class="w"> </span>admin<span class="w"> </span>-p<span class="w"> </span>library_restore<span class="w"> </span>&lt;<span class="w"> </span>~/backups/library_2026-05-25_*.sql
-</code></pre></div>
-<p>Сверьте структуру и количество строк:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">USE</span><span class="w"> </span><span class="n">library_restore</span><span class="p">;</span>
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">books</span><span class="p">;</span>
-<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="k">SELECT</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">authors</span><span class="p">;</span>
-</code></pre></div>
-<p>Если совпадает с <code>rows_before.txt</code>, перенесите данные обратно в <code>library</code>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">USE</span><span class="w"> </span><span class="n">library</span><span class="p">;</span>
-<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="k">IF</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">EXISTS</span><span class="w"> </span><span class="n">books</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="n">library_restore</span><span class="p">.</span><span class="n">books</span><span class="p">;</span>
-<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">books</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">library_restore</span><span class="p">.</span><span class="n">books</span><span class="p">;</span>
-</code></pre></div>
-<p>Или просто переименуйте таблицы / БД, если допустимо «потерять» текущее состояние.</p>
-<h3 id="8-postgresql">8. Восстановление: PostgreSQL<a class="headerlink" href="#8-postgresql" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>psql<span class="w"> </span>-h<span class="w"> </span><span class="m">127</span>.0.0.1<span class="w"> </span>-U<span class="w"> </span>admin<span class="w"> </span>-d<span class="w"> </span>postgres<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;CREATE DATABASE library_restore;&quot;</span>
-<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
-<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>pg_restore<span class="w"> </span>-h<span class="w"> </span><span class="m">127</span>.0.0.1<span class="w"> </span>-U<span class="w"> </span>admin<span class="w"> </span>-d<span class="w"> </span>library_restore<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="w">    </span>--clean<span class="w"> </span>--if-exists<span class="w"> </span>~/backups/library_2026-05-25_*.dump
-</code></pre></div>
-<p>Сверка:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="err">\</span><span class="k">connect</span><span class="w"> </span><span class="n">library_restore</span>
-<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">books</span><span class="p">;</span>
-<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="k">SELECT</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">authors</span><span class="p">;</span>
-</code></pre></div>
-<p>При совпадении — перенос данных в <code>library</code>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">library</span><span class="p">.</span><span class="k">public</span><span class="p">.</span><span class="n">books</span>
-<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">library_restore</span><span class="p">.</span><span class="k">public</span><span class="p">.</span><span class="n">books</span><span class="p">;</span>
-</code></pre></div>
-<h3 id="9-ms-sql">9. Восстановление: MS SQL<a class="headerlink" href="#9-ms-sql" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">USE</span><span class="w"> </span><span class="n">master</span><span class="p">;</span>
-<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="k">ALTER</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">Library</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">SINGLE_USER</span><span class="w"> </span><span class="k">WITH</span><span class="w"> </span><span class="k">ROLLBACK</span><span class="w"> </span><span class="k">IMMEDIATE</span><span class="p">;</span>
-<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>
-<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="n">RESTORE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">Library</span>
-<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="k">FROM</span><span class="w"> </span><span class="n">DISK</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">N</span><span class="s1">&#39;D:\Backups\Library_2026-05-25_&lt;точная_метка&gt;.bak&#39;</span>
-<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="k">WITH</span><span class="w"> </span><span class="k">REPLACE</span><span class="p">,</span><span class="w"> </span><span class="n">RECOVERY</span><span class="p">;</span>
-<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>
-<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="k">ALTER</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">Library</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">MULTI_USER</span><span class="p">;</span>
-<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a>
-<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a><span class="n">USE</span><span class="w"> </span><span class="n">Library</span><span class="p">;</span>
-<a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a><span class="k">SELECT</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">dbo</span><span class="p">.</span><span class="n">Books</span><span class="p">;</span>
-</code></pre></div>
-<h3 id="10">10. Сверка результата<a class="headerlink" href="#10" title="Permanent link">&para;</a></h3>
-<p>В сводном файле <code>rows_after.txt</code> запишите количество строк после восстановления. Сопоставьте с <code>rows_before.txt</code>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>Таблица   | До | После | Совпадает
-<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>authors   |  2 |    2  |   да
-<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>books     |  2 |    2  |   да
-</code></pre></div>
-<p>Если число строк после восстановления <strong>меньше</strong>, чем до инцидента, бэкап оказался устаревшим — нужно увеличить частоту автоматических бэкапов на следующем этапе.</p>
-<h3 id="11-sha-256">11. Проверка SHA-256<a class="headerlink" href="#11-sha-256" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>sha256sum<span class="w"> </span>-c<span class="w"> </span>~/backups/library_2026-05-25_*.sql.sha256
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="nv">$expected</span> <span class="p">=</span> <span class="p">(</span><span class="nb">Get-Content</span> <span class="s2">&quot;D:\Backups\Library_$ts.bak.sha256.txt&quot;</span><span class="p">).</span><span class="n">Split</span><span class="p">()[</span><span class="n">0</span><span class="p">]</span>
-<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="nv">$actual</span>   <span class="p">=</span> <span class="p">(</span><span class="nb">Get-FileHash</span> <span class="s2">&quot;D:\Backups\Library_$ts.bak&quot;</span><span class="p">).</span><span class="n">Hash</span>
-<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="k">if</span> <span class="p">(</span><span class="nv">$expected</span> <span class="o">-eq</span> <span class="nv">$actual</span><span class="p">)</span> <span class="p">{</span> <span class="s2">&quot;OK&quot;</span> <span class="p">}</span> <span class="k">else</span> <span class="p">{</span> <span class="s2">&quot;MISMATCH&quot;</span> <span class="p">}</span>
-</code></pre></div>
-<p>Совпадение хешей подтверждает: файл бэкапа не был повреждён между снятием и восстановлением.</p>
-<h3 id="12">12. Записи в журнал<a class="headerlink" href="#12" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>2026-05-25 11:20 | BACKUP     | mysqldump library → backup_2026-05-25_11-20.sql (124 КБ)
-<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>2026-05-25 11:22 | CHECKSUM   | SHA-256 = a7f8...c2c4
-<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>2026-05-25 11:40 | INCIDENT   | DROP TABLE books — таблица удалена
-<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>2026-05-25 11:45 | RESTORE    | в library_restore из backup_2026-05-25_11-20.sql; 248 строк
-<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>2026-05-25 11:50 | VERIFY     | rows_before == rows_after — данные совпадают
-</code></pre></div>
-<h2 id="_4">Контрольные проверки этапа<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<ul>
-<li>[ ] Бэкап-файл существует и размер &gt; 0.</li>
-<li>[ ] Файл <code>.sha256</code> создан рядом с бэкапом.</li>
-<li>[ ] В дампе видны <code>CREATE TABLE</code> и <code>INSERT INTO</code>.</li>
-<li>[ ] После «инцидента» таблица недоступна.</li>
-<li>[ ] Восстановление из бэкапа прошло без ошибок.</li>
-<li>[ ] <code>COUNT(*)</code> после восстановления совпадает с <code>COUNT(*)</code> до инцидента.</li>
-<li>[ ] SHA-256 файла бэкапа подтверждён повторной проверкой.</li>
-<li>[ ] В журнале администратора 5 новых записей.</li>
-</ul>
-<h2 id="_5">Артефакты этапа<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Артефакт</th>
-<th>Где взять</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Файл бэкапа</td>
-<td><code>~/backups/library_*.sql</code> / <code>*.dump</code> / <code>Library_*.bak</code></td>
-</tr>
-<tr>
-<td>Файл SHA-256</td>
-<td><code>library_*.sql.sha256</code> / <code>Library_*.bak.sha256.txt</code></td>
-</tr>
-<tr>
-<td><code>rows_before.txt</code>, <code>rows_after.txt</code></td>
-<td>Вывод <code>SELECT COUNT(*)</code></td>
-</tr>
-<tr>
-<td>Скриншот «инцидента» и сообщения об ошибке</td>
-<td>CLI/GUI</td>
-</tr>
-<tr>
-<td>Скриншот успешного восстановления</td>
-<td>CLI/GUI</td>
-</tr>
-<tr>
-<td>Журнал администратора</td>
-<td>5 новых строк за этап</td>
-</tr>
-</tbody>
-</table>
+<h1 id="_1">Резервная копия и восстановление<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">До копирования<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>Сохраните контрольные значения своей базы: по каждой выданной таблице <code>COUNT(*)</code>, <code>SUM(id)</code> и <code>SUM(amount)</code>. В исходном наборе каждая из трёх предметных таблиц содержит 4 строки, сумму id 10 и сумму amount 100. Таблица <code>access_probe</code> проверяется отдельно. Если собственная операция меняла данные, зафиксируйте новые значения перед резервированием.</p>
+<h2 id="_3">Какую базу восстанавливать<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>Восстановление первого бэкапа выполняется в новую <code>pm07_vNN_restore</code>. Исходную <code>pm07_vNN</code> не удаляют и не переводят в SINGLE_USER ради этой проверки. Точное имя файла берётся из только что выполненной команды; звёздочка в имени не выбирает нужную копию за студента.</p>
+<h2 id="_4">Как понять результат<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>Последовательность команд находится в <a href="stage1.html">маршруте своей СУБД</a>. После восстановления сравните все таблицы и контрольные значения. Совпадение числа строк при разных суммах или отсутствующей таблице не является совпадением данных.</p>
+<p><code>pg_restore --list</code>, <code>RESTORE VERIFYONLY</code>, ненулевой размер файла и успешный код команды дают частичные сведения. Итоговая проверка этой практики включает восстановление и запросы к новой базе. SHA-256 подтверждает неизменность конкретного файла между двумя измерениями.</p>
+<h2 id="_5">Если значения различаются<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>Сначала сопоставьте имена исходной/проверочной базы, точное имя и время создания файла, список включённых таблиц и сообщения команды восстановления. Остановитесь на первой причине. Различие не доказывает автоматически, что «копии делаются слишком редко».</p>
+<h2 id="postgresql">Разбор восстановления PostgreSQL на образце<a class="headerlink" href="#postgresql" title="Permanent link">&para;</a></h2>
+<h3 id="_6">Сначала зафиксируйте данные<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>Реальный запрос CLI к pm07_demo вернул по 4 строки, сумму id 10 и сумму amount 100. В графическом клиенте получены те же значения. В SQL своего варианта имена таблиц заменяются до запуска; сравнивайте все три, а не одну удобную таблицу.</p>
+<p><img alt="Контрольные значения исходной базы из psql" src="../assets/screenshots/pg-cli-result.png" /></p>
+<h3 id="_7">Создайте архив и запишите точный файл<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>Ниже показан результат действительного pg_dump с форматом -Fc, затем размер, SHA-256 и фрагмент списка архива. Здесь файл находится в /tmp/manual.dump; у себя используйте каталог своего маршрута. Строки с «+» показывают выполняемые команды оболочки и не входят в текст, который нужно копировать. Код 0 означает завершение команды, но ещё не проверку восстановления.</p>
+<p><img alt="Созданный архив PostgreSQL и его SHA-256" src="../assets/screenshots/pg-dump.png" /></p>
+<h3 id="_8">Сверьте отдельную восстановленную базу<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p>Архив восстановлен в заранее выделенную пустую pm07_demo_shot_restore. Это отдельное имя проверочной базы; исходная pm07_demo сохранена. Запрос выполняется уже к назначению и возвращает те же три результата 4/10/100. У себя используйте имя _restore из таблицы подстановок. Синтаксис восстановления для MySQL, MariaDB и SQL Server берётся из своего маршрута, а не из этого примера PostgreSQL.</p>
+<p><img alt="Три таблицы отдельной восстановленной базы" src="../assets/screenshots/pg-restored-data.png" /></p>
 
 
 
@@ -1309,10 +1179,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "navigation.top", "navigation.tracking", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "navigation.top", "navigation.tracking", "toc.follow"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
       
         <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
       
